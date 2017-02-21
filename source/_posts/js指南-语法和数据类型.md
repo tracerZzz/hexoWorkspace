@@ -1,5 +1,5 @@
 ---
-title: js权威指南-语法和数据类型  
+title: js指南-语法和数据类型  
 author: tracerZzz 
 excerpt: <img src="http://og3vj3jrj.bkt.clouddn.com/js/mdn.png"></br>javascript 变量、常量的声明，作用域，变量提升，数据结构和类型，数据类型的转换(parseInt(),parseFloat(),inNaN())，以及字面量
 tags: 
