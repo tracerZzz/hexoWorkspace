@@ -1,0 +1,14 @@
+.blog-tags-container, .blog-categories-container {
+    margin-top: 30px;
+    font-size: 20px;
+}
+.blog-tags-container span.glyphicon, .blog-categories-container span.glyphicon {
+    margin-right: 20px;
+}
+
+.top{
+	height: 21%;
+	background-image: url('http://og3vj3jrj.bkt.clouddn.com/blog/blogbgdaisy.jpg');
+	background-repeat: no-repeat;
+	background-position: bottom left;
+}
