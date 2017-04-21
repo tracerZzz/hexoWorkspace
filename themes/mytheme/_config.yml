@@ -1,8 +1,12 @@
+
 # Header
 menu:
   Home: /
   Archives: /archives
-  POSTS: /posts
+  category: /categories
+  
+
+
 
 
 # Read More text

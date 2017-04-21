@@ -1,27 +1,35 @@
+<%- is_post() %>
+
 <div class="blog-post">
 
     <!-- Title -->
-    <h2 class="blog-post-title">
+    <h3 class="blog-post-title">
         <a href="<%- config.root %><%- item.path %>">
             <%- item.title || item.link%>
         </a>
-    </h2>
+    </h3>
 
     <!-- Date and Author -->
     <p class="blog-post-meta">
-        <%= item.date.format(config.date_format) %>
+        <%= item.date.format(config.date_format)  %>
         <% if(item.author) { %>
             by <%- item.author %>
         <% } %>
     </p>
+    <!-- Tags and Categories links -->
+    <%- partial('article-tags', {item: item}) %>
+    <%- partial('article-categories', {item: item}) %>
 
     <!-- Content -->
     <%- item.content %>
 
     <hr />
 
-    <!-- Tags and Categories links -->
-    <%- partial('article-tags', {item: item}) %>
-    <%- partial('article-categories', {item: item}) %>
+    
 
+</div>
+
+<div id="toc" class="toc-article hidden-sm-down">
+    <div class="toc-title">目录</div>
+    <%- toc(item.content, {list_number: false}) %>
 </div>

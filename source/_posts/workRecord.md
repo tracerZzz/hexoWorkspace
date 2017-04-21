@@ -9,7 +9,7 @@ excerpt: <img src="http://og3vj3jrj.bkt.clouddn.com/js/ext.png"></br>接取送�
 页面实现结果如下图：
 
 
-<img src="http://og3vj3jrj.bkt.clouddn.com/js/receive.png" style="width: 100%">
+<img  src="http://og3vj3jrj.bkt.clouddn.com/js/receive.png" style="width: 100%">
 >定义load方法，用来加载费率计算公式，若之前没有设定,创建三条记录，将so,a,b都设置为暂未设定
 
 #### 预加载

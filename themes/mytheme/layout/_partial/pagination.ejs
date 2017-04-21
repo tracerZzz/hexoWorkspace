@@ -1,4 +1,4 @@
-<nav>
+<!-- <nav>
     <ul class="pager">
         <% if (page.prev){ %>
             <li><a href="<%- config.root %><%- page.prev_link %>">Previous</a></li>
@@ -7,4 +7,13 @@
             <li><a href="<%- config.root %><%- page.next_link %>">Next</a></li>
         <% } %>
     </ul>
-</nav>
+</nav> -->
+
+  <% if (page.total > 1){ %>
+  <nav id="page-nav">
+    <%- paginator({
+      prev_text: '&laquo; Prev',
+      next_text: 'Next &raquo;'
+    }) %>
+  </nav>
+<% } %>
