@@ -1,0 +1,38 @@
+#main{
+	width: 80%;
+	border: 1px solid ;
+}
+#slider{
+	width: 20%;
+	border: 1px solid ;
+}
+
+
+.menu-line{
+	border: none;
+	position: relative;
+	left: 12%;
+	height: 4px;
+	width:76%;
+	background-color:gray; 
+	border-radius: 2px;
+}
+.line1{
+	margin-top: 8px;
+}.line2{
+	margin-top: 4px;
+}.line3{
+	margin-top: 4px;
+}
+
+#menu{
+	height: 40px;
+	width: 40px;
+	position: fixed;
+	right: 100px;
+	bottom: 100px;
+	border-radius: 5px;
+	border: 2px solid gray;
+	background-color:none;
+	z-index: 1003;
+}

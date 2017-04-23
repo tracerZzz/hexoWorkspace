@@ -13,14 +13,12 @@
         <div class="row">
 
             <!-- Main Content -->
+            <div class="col-sm-2"></div>
             <div class="col-lg-9 blog-main col-sm-12">
                 <%- body %>
             </div>
 
-            <!-- Sidebar -->
-            <div class="col-sm-3  blog-sidebar hidden-md-down">
-                <%- partial('_partial/sidebar') %>
-            </div>
+           
         </div>
     </div>
         <!-- Footer -->
@@ -28,6 +26,14 @@
 
     <!-- After footer scripts -->
     <%- partial('_partial/after-footer') %>
+    
+    <div id="menu" class="menu">
+        <div class="menu menu-line line1" id="line1"></div>
+        <div class="menu menu-line line2" id="line2"></div>
+        <div class="menu menu-line line3" id="line3"></div>
+
+    </div>
+
 </body>
 
 </html>
