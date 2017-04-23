@@ -33,8 +33,8 @@ module.exports = {
         // test: ["babel-polyfill", "./src/test.js"],
         // svg: ["./src/svg.js"],
         // gsap: ["./src/gsap.js"],
-        index: [ 'webpack-hot-middleware/client?reload=true',"./src/blog/js/index.js"],
-        archive: [ 'webpack-hot-middleware/client?reload=true',"./src/blog/js/archive.js"],
+        index: ['webpack-hot-middleware/client?reload=true', "./src/blog/js/index.js"],
+        archive: ['webpack-hot-middleware/client?reload=true', "./src/blog/js/archive.js"],
         // weixinDemo:["src/weixin/weixinDemo.js"],
         //transSourceSearch:["src/weixin/transSourceSearch.js"]
         /*vendor: ['jquery', 'lodash']*/
@@ -137,7 +137,7 @@ module.exports = {
             "window.jQuery": "jquery",
             //_: "lodash",
         }),
-       // 重复代码抽取为公共部分 插件
+        // 重复代码抽取为公共部分 插件
         new webpack.optimize.CommonsChunkPlugin({
             name: "common",
             // (the commons chunk name)
@@ -150,29 +150,7 @@ module.exports = {
             chunks: ["index", "archive"],
             // (Only use these entries)
         }),
-        //自动生成html插件
-        // new HtmlWebpackPlugin({
-        //     title: 'My App',
-        //     filename: 'index.html',
-        // }),
-        // //ejs /html template demo
-        // new HtmlWebpackPlugin({
-        //     title: 'My App',
-        //     filename: 'svg.html',
-        //     template: path.resolve(__dirname, 'src/svg.html'),
-        //     inject: "head",
-        //     xhtml: true,
-        //     chunks: ["common", "svg"],
 
-        // }),
-        // new HtmlWebpackPlugin({
-        //     filename: 'gsap.html',
-        //     template: path.resolve(__dirname, 'src/gsapDemo.html'),
-        //     inject: "head",
-        //     xhtml: true,
-        //     chunks: ["common", "gsap"],
-
-        // }),
         /**
          * 
          * blog
@@ -193,27 +171,6 @@ module.exports = {
             chunks: [],
 
         }),
-        /**
-         * 
-         * weixinDemo
-         */
-        // new HtmlWebpackPlugin({
-        //     filename: 'weixinDemo.html',
-        //     template: path.resolve(__dirname, 'src/weixin/weixinDemo.html'),
-        //     inject: "head",
-        //     xhtml: true,
-        //     chunks: ["weixinDemo" ],
-
-        // }),
-
-        // new HtmlWebpackPlugin({
-        //     filename: 'index.html',
-        //     template: path.resolve(__dirname, 'src/weixin/transSourceSearch.html'),
-        //     inject: "head",
-        //     xhtml: true,
-        //     chunks: ["transSourceSearch" ],
-
-        // }),
 
         //全局变量定义插件
         new webpack.DefinePlugin({
@@ -223,8 +180,8 @@ module.exports = {
             TWO: "1+1",
             "typeof window": JSON.stringify("object")
         }),
- // OccurenceOrderPlugin is needed for webpack 1.x only
-   // new webpack.optimize.OccurenceOrderPlugin(),
+        // OccurenceOrderPlugin is needed for webpack 1.x only
+        // new webpack.optimize.OccurenceOrderPlugin(),
         new webpack.HotModuleReplacementPlugin(),
         new webpack.NoEmitOnErrorsPlugin()
 
