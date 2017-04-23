@@ -9,6 +9,9 @@ require("../../../static/bootstrap/css/bootstrap.min.css")
 require("../../style/archive/default.css")
 require("../../style/archive/component.css")
 require('./classie.js');
+require("jquery-lazyload")
+
+//require("../../../static/font-awesome-4.7.0/css/font-awesome.min.css");
 
 
 $(function () {
@@ -35,6 +38,12 @@ $(function () {
 				//classie.toggle( showRightPush, 'cbp-spmenu-push-toleft' );
 				classie.toggle( menuRight, 'cbp-spmenu-open' );
 			};
+
+
+	TweenMax.staggerFrom(".blog-post", 1, {y:40,opacity:0},0)
+	//延迟加载图片
+	$("img.lazy").lazyload({effect: "fadeIn"});
+
 
 			
 

@@ -1,7 +1,7 @@
 ---
 title: 运力信息审核页面实现
 author: tracerZzz 
-excerpt: <img src="http://og3vj3jrj.bkt.clouddn.com/js/ext.png"></br>运力信息审核页面实现页面的实现思路，具体细节，以及问题总结；
+excerpt: <img class="lazy" width="60%" height="200" data-original="http://og3vj3jrj.bkt.clouddn.com/js/ext.png"></br>运力信息审核页面实现页面的实现思路，具体细节，以及问题总结；
 tags: 
 - 123
 - 456

@@ -1,7 +1,7 @@
 ---
 title: js指南-闭包  
 author: tracerZzz 
-excerpt: <img src="http://og3vj3jrj.bkt.clouddn.com/js/mdn.png"></br>javascript 闭包，原型链，作用域链。
+excerpt: <img width="60%" height="200" class="lazy" data-original="http://og3vj3jrj.bkt.clouddn.com/js/mdn.png"></br>javascript 闭包，原型链，作用域链。
 tags: 
 - js
 ---

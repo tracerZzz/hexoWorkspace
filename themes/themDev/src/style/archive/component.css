@@ -1,7 +1,8 @@
 /* General styles for all menus */
 .cbp-spmenu {
-	background: black;
+	background: none;
 	position: fixed;
+	border: 1px solid gray;
 }
 
 .cbp-spmenu h3 {
@@ -11,17 +12,21 @@
 	margin: 0;
 	font-weight: 300;
 	background: #0d77b6;
+
 }
 
 .cbp-spmenu a {
 	display: block;
-	color: #fff;
+	padding-left: 10px;
+	color: gray;
 	font-size: 1.1em;
 	font-weight: 300;
+	text-decoration: none;
 }
 
 .cbp-spmenu a:hover {
 	background: #258ecd;
+	text-decoration: none;
 }
 
 .cbp-spmenu a:active {

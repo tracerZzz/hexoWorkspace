@@ -1,7 +1,7 @@
 ---
 title: js指南-函数  
 author: tracerZzz 
-excerpt: <img src="http://og3vj3jrj.bkt.clouddn.com/js/mdn.png"></br>javascript 函数 argumnets,箭头函数，默认参数
+excerpt: <img width="80%"  class="lazy" data-original="http://og3vj3jrj.bkt.clouddn.com/js/mdn.png"></br>javascript 函数 argumnets,箭头函数，默认参数
 tags: 
 - js
 ---

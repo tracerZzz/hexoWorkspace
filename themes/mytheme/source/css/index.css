@@ -160,7 +160,10 @@ input:hover{
 }
 
 
-
+.describe{
+ /* //	stroke: black; */
+	fill: black; 
+}
 
 /*!
  * jQuery UI CSS Framework 1.9.2

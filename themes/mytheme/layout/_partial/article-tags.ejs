@@ -3,11 +3,11 @@
     var tags = [];
     item.tags.forEach(function(tag){
     	
-        tags.push('<a href="' + config.root + tag.path + '">#' + tag.name + '</a>');
+        tags.push('<a href="' + config.root + tag.path + '">' + tag.name + '</a>');
     });
 %>
-<div class="blog-tags-container">
-    <span class="glyphicon glyphicon-tags"></span>
+<span class="blog-tags-container blog-post-meta">
+    <span class="fa fa-tags" aria-hidden="true"></span>
     <%- tags.join(' ') %>
-</div>
+</span>
 <% } %>

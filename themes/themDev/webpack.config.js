@@ -97,9 +97,9 @@ module.exports = {
                 }
             },
             //html loader
-            { test: /\.(jpg)$/, use: ["file-loader"] },
+            { test: /\.(jpe?g)$/, use: ["file-loader?limit=10240&mimetype=image/png&name=../../mytheme/source/img/[name].[ext]"] },
             //路径为相对于css路径的上一级目录下的img目录下，10以下转换为base64 
-            { test: /\.(png|jpe?g|gif|svg|woff|woff2|ttf|otf|eot)$/, use: ["url-loader?limit=10240&mimetype=image/png&name=../../mytheme/source/img/[name].[ext]"] }, {
+            { test: /\.(png|gif|svg|woff|woff2|ttf|otf|eot)$/, use: ["url-loader?limit=10240&mimetype=image/png&name=../../mytheme/source/img/[name].[ext]"] }, {
                 test: /\.html$/,
                 use: [{
                     loader: 'html-loader',
@@ -155,22 +155,22 @@ module.exports = {
          * 
          * blog
          */
-        new HtmlWebpackPlugin({
-            filename: '../../mytheme/layout/index.ejs',
-            template: path.resolve(__dirname, 'src/blog/index.ejs'),
-            inject: "head",
-            xhtml: true,
-            chunks: [],
+        // new HtmlWebpackPlugin({
+        //     filename: '../../mytheme/layout/index.ejs',
+        //     template: path.resolve(__dirname, 'src/blog/index.html'),
+        //     inject: "head",
+        //     xhtml: true,
+        //     chunks: [],
 
-        }),
-        new HtmlWebpackPlugin({
-            filename: '../../mytheme/layout/archive.ejs',
-            template: path.resolve(__dirname, 'src/blog/archive.ejs'),
-            inject: "head",
-            xhtml: true,
-            chunks: [],
+        // }),
+        // new HtmlWebpackPlugin({
+        //     filename: '../../mytheme/layout/archive.ejs',
+        //     template: path.resolve(__dirname, 'src/blog/archive.html'),
+        //     inject: "head",
+        //     xhtml: true,
+        //     chunks: [],
 
-        }),
+        // }),
 
         //全局变量定义插件
         new webpack.DefinePlugin({

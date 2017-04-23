@@ -1,7 +1,7 @@
 ---
 title: 接取送达费率页面实现
 author: tracerZzz 
-excerpt: <img src="http://og3vj3jrj.bkt.clouddn.com/js/ext.png"></br>接取送达费率页面实现页面的实现思路，具体细节，以及问题总结；
+excerpt: <img width="60%"  class="lazy" data-original="http://og3vj3jrj.bkt.clouddn.com/js/ext.png"></br>接取送达费率页面实现页面的实现思路，具体细节，以及问题总结；
 ---
 
 

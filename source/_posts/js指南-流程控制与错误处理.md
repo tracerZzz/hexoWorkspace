@@ -1,7 +1,7 @@
 ---
 title: js指南-流程控制与错误处理
 author: tracerZzz 
-excerpt: <img src="http://og3vj3jrj.bkt.clouddn.com/js/mdn.png"></br>javascript 变量、常量的声明，作用域，变量提升，数据结构和类型，数据类型的转换(parseInt(),parseFloat(),inNaN())，以及字面量
+excerpt: <img width="60%" class="lazy"  data-original="http://og3vj3jrj.bkt.clouddn.com/js/mdn.png"></br>javascript 变量、常量的声明，作用域，变量提升，数据结构和类型，数据类型的转换(parseInt(),parseFloat(),inNaN())，以及字面量
 tags: 
 - js
 ---

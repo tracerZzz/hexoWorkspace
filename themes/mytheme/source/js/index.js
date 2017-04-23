@@ -264,11 +264,10 @@ $(function () {
      * 
      */
     //定义 时间线对象用来管理动画的顺序，播放暂停等操作
-    var tl = new _gsap.TimelineMax({ onUpdate: updateSlider, delay: 3, repeat: -1, onRepeat: repeat });
+    var tl = new _gsap.TimelineMax({ onUpdate: updateSlider, delay: 1, repeat: -1, onRepeat: repeat });
 
     function repeat() {}
-    tl.to("#pathLeft", 3, { opacity: 1 }, 0);
-    tl.to("#pathRight", 3, { opacity: 1 }, 0);
+
     tl.fromTo("#gflower", 9, { opacity: 0 }, { opacity: 1 });
     tl.to("#grightcircle", 2, { opacity: 1, scale: 1 }, 0);
     drawToTimeline("#flower", tl, { duration: 38, strokeWidth: 1, position: 5 });
@@ -280,13 +279,16 @@ $(function () {
     tl.fromTo("#grightcircle", 3, { transformOrigin: "50% 50%", scale: 1 }, { transformOrigin: "50% 50%", rotation: 720, opacity: 0.5, scale: 0.5, ease: Power3.easeInOut, delay: 0 }, 18);
     tl.staggerTo(["#grightcircle", "#grightcenter"], 5, { transformOrigin: "50% 50%", x: "270", scale: 0.7, opacity: 0.8, ease: Power3.easeIn, delay: 0 }, 0, 21);
     tl.to("#gflower", 5, { transformOrigin: "50% 50%", x: "-100", opacity: 0.8, fill: "green", scale: 0.7, ease: Power3.easeIn, delay: 0 }, 21);
-    tl.to("#pathLeft", 5, { opacity: 0 }, 26);
-    tl.to("#pathRight", 5, { opacity: 0 }, 26);
-    tl.staggerFromTo(".describe", 2, { y: -50, opacity: 0 }, { y: 0, opacity: 1 }, 3, 29);
+    //  tl.to("#pathLeft", 3, { opacity: 1 }, 23);
+    // tl.to("#pathRight", 3, { opacity: 1 }, 23);
+    // tl.to("#pathLeft", 5, { opacity: 0 }, 26);
+    // tl.to("#pathRight", 5, { opacity: 0 }, 26);
+    tl.staggerFromTo(".describeleft", 2, { y: -50, opacity: 0 }, { y: 0, opacity: 1 }, 4.5, 29);
+    tl.staggerFromTo(".describeright", 2, { y: -50, opacity: 0 }, { y: 0, opacity: 1 }, 4.5, 31);
     tl.to("#grightcircle", 5, { rotation: -720, ease: Power3.easeInOut, delay: 0 }, 48);
     tl.to("#grightcenter", 5, { fill: "#1e7bcc", ease: Power3.easeInOut, delay: 0 }, 48);
     tl.to("#gflower", 5, { fill: "#65107c", delay: 0 }, 48);
-    tl.staggerTo([".describe", "#pathLeft", "#pathRight", "#gflower", "#grightcircle", "#grightcenter"], 3, { opacity: 0 }, 0, 54);
+    tl.staggerTo([".describeleft", ".describeright", "#pathLeft", "#pathRight", "#gflower", "#grightcircle", "#grightcenter"], 3, { opacity: 0 }, 0, 54);
 
     /**
      * 时间线绑定
