@@ -14,7 +14,7 @@ webpackJsonp([0],[
 
 var _gsap = __webpack_require__(2);
 
-var _index = __webpack_require__(30);
+var _index = __webpack_require__(31);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -27,7 +27,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * jquery plugins
  */
-__webpack_require__(22);
+__webpack_require__(23);
 
 /**
  *  引入jquery.ui.slider
@@ -40,17 +40,17 @@ __webpack_require__(22);
  * gsap
  */
 //require("gsap");
-__webpack_require__(23);
-__webpack_require__(26);
 __webpack_require__(24);
+__webpack_require__(27);
 __webpack_require__(25);
+__webpack_require__(26);
 // 样式  (可以按需引入必要的css文件)
-__webpack_require__(32);
 __webpack_require__(33);
+__webpack_require__(34);
 //customer style
 
 //加入jqueryui 移动端插件
-__webpack_require__(13);
+__webpack_require__(14);
 //鼠标位置监控
 /*require('script-loader!trial-js')*/
 //随机颜色
@@ -442,7 +442,8 @@ $(function () {
 /* 10 */,
 /* 11 */,
 /* 12 */,
-/* 13 */
+/* 13 */,
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -491,7 +492,6 @@ $(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */,
 /* 15 */,
 /* 16 */,
 /* 17 */,
@@ -499,7 +499,8 @@ $(function () {
 /* 19 */,
 /* 20 */,
 /* 21 */,
-/* 22 */
+/* 22 */,
+/* 23 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -634,7 +635,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 });
 
 /***/ }),
-/* 23 */
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -745,7 +746,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 24 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -793,7 +794,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 25 */
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -924,7 +925,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 26 */
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1061,31 +1062,31 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 27 */,
 /* 28 */,
 /* 29 */,
-/* 30 */
+/* 30 */,
+/* 31 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 31 */,
-/* 32 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 32 */,
 /* 33 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 34 */,
+/* 34 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
 /* 35 */,
-/* 36 */
+/* 36 */,
+/* 37 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
@@ -1093,4 +1094,4 @@ module.exports = __webpack_require__(7);
 
 
 /***/ })
-],[36]);
+],[37]);

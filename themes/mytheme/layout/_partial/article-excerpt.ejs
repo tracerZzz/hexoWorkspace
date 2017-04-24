@@ -1,5 +1,5 @@
 
-<div class="blog-post">
+<div class="blog-post col-sm-4 offset-sm-1">
     
 
         <!-- Date and Author -->
@@ -13,7 +13,7 @@
 
 <span class="blog-post-meta">
       <i class="fa fa-calendar" aria-hidden="true"></i> <%= item.date.format(config.date_format) %>
-    </span>
+    </span>&nbsp;&nbsp;&nbsp;
     <%- partial('article-tags', {item: item}) %> 
     <!-- Content -->
     <div class="excerpt">

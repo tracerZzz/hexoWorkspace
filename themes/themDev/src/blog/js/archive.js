@@ -30,7 +30,7 @@ $(function () {
 					TweenMax.to("#menu",0.2,{x:0});
 					thisPage.menuState="close";
 				}else{
-					TweenMax.to("#menu",0.2,{x:-190});
+					TweenMax.to("#menu",0.2,{x:-240});
 					thisPage.menuState="open";
 					//TweenMax.to("#line1",0.2,{css:{width:"50%",rationX:45}transformOrigin:"right bottom"})
 				}

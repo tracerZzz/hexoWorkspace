@@ -11,7 +11,8 @@
 	padding: 20px;
 	margin: 0;
 	font-weight: 300;
-	background: #0d77b6;
+	 background: #0d77b6; 
+	/* background-color: lightgray; */
 
 }
 
@@ -25,8 +26,9 @@
 }
 
 .cbp-spmenu a:hover {
-	background: #258ecd;
+	/* background: #258ecd; */
 	text-decoration: none;
+	color: #258ecd;
 }
 
 .cbp-spmenu a:active {
@@ -44,7 +46,8 @@
 }
 
 .cbp-spmenu-vertical a {
-	border-bottom: 1px solid #258ecd;
+	/* border-bottom: 1px solid #258ecd; */
+	border-bottom: 1px solid gray;
 	padding: 1em;
 }
 
@@ -91,22 +94,6 @@
 }
 
 /* Horizontal menu that slides from the top or bottom */
-
-.cbp-spmenu-top {
-	top: -150px;
-}
-
-.cbp-spmenu-bottom {
-	bottom: -150px;
-}
-
-.cbp-spmenu-top.cbp-spmenu-open {
-	top: 0px;
-}
-
-.cbp-spmenu-bottom.cbp-spmenu-open {
-	bottom: 0px;
-}
 
 /* Push classes applied to the body */
 

@@ -16,7 +16,7 @@ layout: false
 
 <body class=cbp-spmenu-push>
     <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id=cbp-spmenu-s2>
-        <h3>Tracer'blog</h3>
+        <h3>TracerZzz'blog</h3>
         <a href=#><i class="fa fa-home" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页</a>
         <a href=#><i class="fa fa-archive" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;归档</a>
         <a href=#><i class="fa fa-book" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分类</a>
@@ -27,17 +27,23 @@ layout: false
     <div id="mask">
         <div id="maskc"></div>
     </div>
-    <div class=container>
+    <div class=container-fluid>
         <div id="blogtitle">
             <div class="row">
-                <div class="col-sm-4 offset-sm-4">fs</div>
+                <div class="col-sm-8 offset-sm-2">
+                    call me engineer
+                </div>
             </div>
             
            
         </div>
-                <% page.posts.each(function(item){ %>
-                <%- partial('_partial/article-excerpt', {item: item}) %>
-             <% }); %>
+        <div class="row">
+            
+               <% page.posts.each(function(item){ %>
+               <%- partial('_partial/article-excerpt', {item: item}) %>
+            <% }); %>
+        </div>  
+
                 <%- partial('_partial/pagination') %>
            
     </div>
