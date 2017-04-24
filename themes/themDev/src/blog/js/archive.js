@@ -1,14 +1,15 @@
 import { TweenMax, AttrPlugin, TweenLite, Power2 } from "gsap";
 import randomColor from "modules/randomcolor/randomColor.js";
-require("../../style/archive.css")
+
 
 // require("../../../static/bootstrap/js/tether.min.js")
 // require("../../../static/bootstrap/js/bootstrap.min.js")
 require("../../../static/bootstrap/css/bootstrap.min.css")
-
+require('./classie.js');
 require("../../style/archive/default.css")
 require("../../style/archive/component.css")
-require('./classie.js');
+require("../../style/archive.css")
+
 require("jquery-lazyload")
 
 //require("../../../static/font-awesome-4.7.0/css/font-awesome.min.css");

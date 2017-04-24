@@ -1,15 +1,14 @@
-是否是tag:<%- is_tag() %>
-<h1>tag:<%-page.tag%></h1>
-<% console.log(page.tag) %>
+
+<div class="col-sm-8 offset-sm-2">tag:<%-page.tag%></div>
+
 <%
 	var tagPost=[];
 	var posts=site.posts;
 	posts.each(function(post){
-		/*console.log(post.tags);*/
 		post.tags.each(function(tag){
 			if(tag.name==page.tag){
 				tagPost.push(post);
-				console.log(post.title);
+				
 			}
 		})
 	})
@@ -19,4 +18,3 @@
 <% page.posts.each(function(item){ %>
     <%- partial('_partial/article-excerpt', {item: item}) %>
 <% }); }%>
-	<%- partial('_partial/pagination') %>

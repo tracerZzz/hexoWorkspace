@@ -388,15 +388,14 @@ var _randomColor2 = _interopRequireDefault(_randomColor);
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-__webpack_require__(28);
-
 // require("../../../static/bootstrap/js/tether.min.js")
 // require("../../../static/bootstrap/js/bootstrap.min.js")
 __webpack_require__(32);
-
+__webpack_require__(22);
 __webpack_require__(30);
 __webpack_require__(29);
-__webpack_require__(22);
+__webpack_require__(28);
+
 __webpack_require__(13);
 
 //require("../../../static/font-awesome-4.7.0/css/font-awesome.min.css");

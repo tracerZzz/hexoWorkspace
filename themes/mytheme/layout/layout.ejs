@@ -1,39 +1,51 @@
-<html>
+<!DOCTYPE html>
+<html lang=en>
 
-<!-- Head tag -->
-<%- partial('_partial/head') %>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset=UTF-8>
+    <title>archive</title>
+</head>
 
-<body>
-    <!-- Menu -->
-    <%- partial('_partial/menu') %>
-    <div class="main">
-        <!-- Blog Header: title and subtitle -->
-        <%- partial('_partial/header') %>
+<link rel=stylesheet type=text/css href="/css/archive.css">
+<link rel=stylesheet type=text/css href="/css/font-awesome.min.css">
+<script src=/js/common.js></script>
+<script src=/js/archive.js></script>
 
-        <div class="row">
-
-            <!-- Main Content -->
-            <div class="col-sm-2"></div>
-            <div class="col-lg-9 blog-main col-sm-12">
-                <%- body %>
+<body class=cbp-spmenu-push>
+    <nav class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right" id=cbp-spmenu-s2>
+        <h3>TracerZzz'blog</h3>
+        <a href=#><i class="fa fa-home" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;首页</a>
+        <a href=#><i class="fa fa-archive" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;归档</a>
+        <a href=#><i class="fa fa-book" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;分类</a>
+        <a href=#><i class="fa fa-tags" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;标签</a>
+        <a href=#><i class="fa fa-github-alt" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;github</a>
+        <a href=#><i class="fa fa-odnoklassniki" aria-hidden="true"></i> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;about Me</a>
+    </nav>
+    <div id="mask">
+        <div id="maskc"></div>
+    </div>
+    <div class=container-fluid>
+        <div id="blogtitle">
+            <div class="row">
+                <div class="col-sm-8 offset-sm-2">
+                    call me engineer
+                </div>
             </div>
-
+            
            
         </div>
+        <div class="row">
+             <%- body %>
+         
+         </div>  
+
+              
+           
     </div>
-        <!-- Footer -->
-    <%- partial('_partial/footer') %>
-
-    <!-- After footer scripts -->
-    <%- partial('_partial/after-footer') %>
-    
-    <div id="menu" class="menu">
-        <div class="menu menu-line line1" id="line1"></div>
-        <div class="menu menu-line line2" id="line2"></div>
-        <div class="menu menu-line line3" id="line3"></div>
-
+    <div id=menu class=menu>
+        <div class="menu menu-line line1" id=line1></div>
+        <div class="menu menu-line line2" id=line2></div>
+        <div class="menu menu-line line3" id=line3></div>
     </div>
-
 </body>
-
-</html>

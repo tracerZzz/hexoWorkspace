@@ -39,7 +39,7 @@
 /* Orientation-dependent styles for the content of the menu */
 
 .cbp-spmenu-vertical {
-	width: 260px;
+	width: 240px;
 	height: 100%;
 	top: 0;
 	z-index: 1000;
@@ -79,7 +79,7 @@
 }
 
 .cbp-spmenu-right {
-	right: -260px;
+	right: -240px;
 	background-image:url("../../img/big.png");
 	background-repeat: no-repeat;
 	background-position:center bottom
@@ -95,6 +95,7 @@
 
 /* Horizontal menu that slides from the top or bottom */
 
+/* Push classes applied to the body */
 /* Push classes applied to the body */
 
 .cbp-spmenu-push {
@@ -148,7 +149,7 @@
 
 	.cbp-spmenu-left,
 	.cbp-spmenu-push-toleft {
-		left: -210px;
+		left: -190px;
 	}
 
 	.cbp-spmenu-right {

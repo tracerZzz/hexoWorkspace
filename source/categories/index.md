@@ -1,8 +1,6 @@
 ---
-title: "categories"
-date: 2017-04-23 00:20:11
-type: category
-layout: category
+title: categories
+date: 2017-04-24 20:29:55
+type: categories
+layout: categoriesIndex
 ---
-
-<%- is_category() %>
