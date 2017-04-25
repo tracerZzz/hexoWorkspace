@@ -5,8 +5,6 @@
         categories.push('<a href="' + config.root + category.path + '">' + category.name + '</a>');
     });
 %>
-<div class="blog-categories-container">
-    <span class="glyphicon glyphicon-folder-open"></span>
-    <%- categories.join(' / ') %>
-</div>
+    <span><i class="fa fa-book" aria-hidden="true"></i></span>
+    <%- categories.join(' ') %>&nbsp;&nbsp;&nbsp;
 <% } %>

@@ -5,19 +5,21 @@ webpackJsonp([0],[
 /* 3 */,
 /* 4 */,
 /* 5 */,
-/* 6 */
+/* 6 */,
+/* 7 */,
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-var _gsap = __webpack_require__(2);
+var _gsap = __webpack_require__(3);
 
-var _index = __webpack_require__(30);
+var _index = __webpack_require__(33);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _randomColor = __webpack_require__(4);
+var _randomColor = __webpack_require__(5);
 
 var _randomColor2 = _interopRequireDefault(_randomColor);
 
@@ -26,7 +28,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * jquery plugins
  */
-__webpack_require__(9);
+__webpack_require__(11);
 
 /**
  *  引入jquery.ui.slider
@@ -39,17 +41,17 @@ __webpack_require__(9);
  * gsap
  */
 //require("gsap");
-__webpack_require__(10);
-__webpack_require__(13);
-__webpack_require__(11);
 __webpack_require__(12);
+__webpack_require__(15);
+__webpack_require__(13);
+__webpack_require__(14);
 // 样式  (可以按需引入必要的css文件)
-__webpack_require__(33);
-__webpack_require__(34);
+__webpack_require__(36);
+__webpack_require__(37);
 //customer style
 
 //加入jqueryui 移动端插件
-__webpack_require__(20);
+__webpack_require__(24);
 //鼠标位置监控
 /*require('script-loader!trial-js')*/
 //随机颜色
@@ -188,9 +190,9 @@ $(function () {
 
         var backgrounds = (0, _randomColor2.default)({ luminosity: 'dark', count: $.makeArray(obj).length });
         $.each(obj, function (i, val) {
-            var tl = new _gsap.TimelineMax();
+            var tl = new TimelineMax();
             //val.setAttribute("transform-origin",Math.random()*200+"% "+Math.random()*200+"%");
-            tl.to(val, 5, { opacity: 1, attr: { x: 100, y: getRandomInt(-100, 100) }, css: { scale: Math.random() * 3, backgroundColor: backgrounds[i] }, ease: _gsap.Power2.easeOut });
+            tl.to(val, 5, { opacity: 1, attr: { x: 100, y: getRandomInt(-100, 100) }, css: { scale: Math.random() * 3, backgroundColor: backgrounds[i] }, ease: Power2.easeOut });
             //val.style.backgroundColor=backgrounds[i];
         });
     }
@@ -263,7 +265,7 @@ $(function () {
      * 
      */
     //定义 时间线对象用来管理动画的顺序，播放暂停等操作
-    var tl = new _gsap.TimelineMax({ onUpdate: updateSlider, delay: 1, repeat: -1, onRepeat: repeat });
+    var tl = new TimelineMax({ onUpdate: updateSlider, delay: 1, repeat: -1, onRepeat: repeat });
 
     function repeat() {}
 
@@ -355,12 +357,12 @@ $(function () {
 
     //菜单中心按钮horver效果
     $(".hoversvg").hover(function () {
-        _gsap.TweenLite.to("#menurect", 0.5, { transformOrigin: "50% 50%", scale: 1.1, fill: "none" });
-        _gsap.TweenLite.to(".menuline", 0.5, { transformOrigin: "50% 50%", scale: 1.2, stroke: "white" });
+        TweenLite.to("#menurect", 0.5, { transformOrigin: "50% 50%", scale: 1.1, fill: "none" });
+        TweenLite.to(".menuline", 0.5, { transformOrigin: "50% 50%", scale: 1.2, stroke: "white" });
     }, function () {
-        _gsap.TweenLite.to("#menurect", 0.5, { scale: 1, fill: "black" });
+        TweenLite.to("#menurect", 0.5, { scale: 1, fill: "black" });
         //如果当前menu打开，显示红色
-        _gsap.TweenLite.to(".menuline", 0.5, { scale: 1, stroke: "#d3d3d3" });
+        TweenLite.to(".menuline", 0.5, { scale: 1, stroke: "#d3d3d3" });
     });
 
     //子菜单hover效果
@@ -395,10 +397,10 @@ $(function () {
             _gsap.TweenMax.to("#path4816", 3, { fill: "#3a3939", delay: 2 });
 
             //带单中心按钮变换
-            _gsap.TweenLite.to("#menurect", 0.5, { transformOrigin: "50% 50%", rotation: 720, fill: "none" });
-            _gsap.TweenLite.to("#menutop", 0.5, { rotation: 45, y: 15 });
-            _gsap.TweenLite.to("#menumid", 0.5, { opacity: 0 });
-            _gsap.TweenLite.to("#menubottom", 0.5, { rotation: -45, y: -15 });
+            TweenLite.to("#menurect", 0.5, { transformOrigin: "50% 50%", rotation: 720, fill: "none" });
+            TweenLite.to("#menutop", 0.5, { rotation: 45, y: 15 });
+            TweenLite.to("#menumid", 0.5, { opacity: 0 });
+            TweenLite.to("#menubottom", 0.5, { rotation: -45, y: -15 });
             thisPage.menustate = "open";
             //子菜单运动变换
 
@@ -408,10 +410,10 @@ $(function () {
             _gsap.TweenMax.to("#rightbottom", 1, { transformOrigin: "50% 50%", rotation: 360, opacity: 1, x: 400, y: 200 });
         } else {
             _gsap.TweenMax.to("#path4816", 0.5, { fill: "white", delay: 0 });
-            _gsap.TweenLite.to("#menurect", 0.5, { transformOrigin: "50% 50%", rotation: -720, fill: "none" });
-            _gsap.TweenLite.to("#menutop", 0.5, { stroke: 'white', rotation: 0, y: 0 });
-            _gsap.TweenLite.to("#menumid", 0.5, { opacity: 1 });
-            _gsap.TweenLite.to("#menubottom", 0.5, { stroke: 'white', rotation: 0, y: 0 });
+            TweenLite.to("#menurect", 0.5, { transformOrigin: "50% 50%", rotation: -720, fill: "none" });
+            TweenLite.to("#menutop", 0.5, { stroke: 'white', rotation: 0, y: 0 });
+            TweenLite.to("#menumid", 0.5, { opacity: 1 });
+            TweenLite.to("#menubottom", 0.5, { stroke: 'white', rotation: 0, y: 0 });
             thisPage.menustate = "close";
 
             //子菜单运动变换
@@ -436,9 +438,9 @@ $(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 7 */,
-/* 8 */,
-/* 9 */
+/* 9 */,
+/* 10 */,
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -573,7 +575,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 });
 
 /***/ }),
-/* 10 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -684,7 +686,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 11 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -732,7 +734,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 12 */
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -863,7 +865,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 13 */
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1000,13 +1002,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */,
-/* 15 */,
 /* 16 */,
 /* 17 */,
 /* 18 */,
 /* 19 */,
-/* 20 */
+/* 20 */,
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1055,21 +1059,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */,
 /* 25 */,
 /* 26 */,
 /* 27 */,
 /* 28 */,
 /* 29 */,
-/* 30 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 30 */,
 /* 31 */,
 /* 32 */,
 /* 33 */
@@ -1078,19 +1073,26 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 34 */
+/* 34 */,
+/* 35 */,
+/* 36 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 35 */,
-/* 36 */
+/* 37 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 38 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(6);
+module.exports = __webpack_require__(8);
 
 
 /***/ })
-],[36]);
+],[38]);

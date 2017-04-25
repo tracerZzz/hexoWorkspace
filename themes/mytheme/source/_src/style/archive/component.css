@@ -3,7 +3,7 @@
 	/* background: none; */
 	position: fixed;
 	border: 1px solid gray;
-	background-image: url("../../img/bg.jpg");  
+	/* background-image: url("../../img/bg.jpg");   */
 }
 
 .cbp-spmenu h3 {
@@ -24,6 +24,13 @@
 	font-size: 1.1em;
 	font-weight: 300;
 	text-decoration: none;
+	text-transform: uppercase;
+	text-align: left
+}
+.cbp-spmenu a i{
+	
+	width: 22px;
+	margin-right: 10px;
 }
 
 .cbp-spmenu a:hover {
@@ -81,7 +88,7 @@
 
 .cbp-spmenu-right {
 	right: -240px;
-	background-image:url("../../img/big.png");
+	/* background-image:url("../../img/big.png"); */
 	background-repeat: no-repeat;
 	background-position:center bottom
 }

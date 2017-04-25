@@ -2,7 +2,7 @@
  * gsap
  */
 //require("gsap");
-import { TweenMax, AttrPlugin, TweenLite, Power2, TimelineLite, TimelineMax } from "gsap";
+import { TweenMax } from "gsap";
 
 
 /**

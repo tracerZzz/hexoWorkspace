@@ -2,13 +2,12 @@
 menu:
   Home: /
   Archives: /archives
-  category: /categorys
+  category: /categories
+  tags: /tags
+  about: /about
   
 
 
 # Read More text
 excerpt_link: Read More
 
-skip_render: static/**
-exclude:
-  - static/**
