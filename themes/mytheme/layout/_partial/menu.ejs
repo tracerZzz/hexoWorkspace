@@ -1,49 +1,20 @@
-<!-- <div class="blog-masthead">
-    <div class="top">
-        <nav class="blog-nav">
-            <% for (var i in theme.menu){ %>
-                <a class="blog-nav-item" href="<%- url_for(theme.menu[i]) %>"><%= i %></a>
-            <% } %>
-        </nav>
-    </div>
-</div>
- -->
 
 
- <!-- <nav class="navbar navbar-toggleable-md navbar-light bg-faded"> -->
- <nav class="navbar navbar-toggleable-md navbar-inverse bg-inverse fixed-top"> 
-  <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
-  </button>
-  <a class="navbar-brand" href="#">TracerZzz'Blog</a>
-
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <ul class="navbar-nav mr-auto">
+  <div class="col-sm-10 offset-sm-1 hidden-md-down" id="widemenu">
+    <ul class="">
 
 	<% for (var i in theme.menu){ %>
+    
+    <li class="menulist">
+      <a class="" href="<%- url_for(theme.menu[i]) %>"><%=i%> <span class=""></span></a>
+    </li>
+    <% if(i!=theme.menu.length-1){ %>
+    <li>&bull;</li>
 
-		<li class="nav-item active">
-		  <a class="nav-link" href="<%- url_for(theme.menu[i]) %>"><%= i %> <span class="sr-only">(current)</span></a>
-		</li>
-
-
-	    <!-- <a class="blog-nav-item" href="<%- url_for(theme.menu[i]) %>"><%= i %></a> -->
+    <% }%>
 	<% } %>	
 
 
-      <!-- <li class="nav-item active">
-        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">Link</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link disabled" href="#">Disabled</a>
-      </li> -->
     </ul>
-    <form class="form-inline my-2 my-lg-0">
-      <input class="form-control mr-sm-2" type="text" placeholder="Search">
-      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-    </form>
+
   </div>
-</nav>

@@ -2,8 +2,8 @@ import { TweenMax } from "gsap";
 import randomColor from "modules/randomcolor/randomColor.js";
 
 require("modules/gsap/ScrollToPlugin.js");
-// require("../../../_static/bootstrap/js/tether.min.js")
-// require("../../../_static/bootstrap/js/bootstrap.min.js")
+ // require("../../../_static/bootstrap/js/tether.min.js")
+ // require("../../../_static/bootstrap/js/bootstrap.min.js")
 require("../../../_static/bootstrap/css/bootstrap.min.css")
 require('./classie.js');
 require("../../style/archive/default.css")

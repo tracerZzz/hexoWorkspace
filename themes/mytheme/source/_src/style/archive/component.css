@@ -2,7 +2,8 @@
 .cbp-spmenu {
 	/* background: none; */
 	position: fixed;
-	border: 1px solid gray;
+	/* border: 1px solid gray; */
+	/* background-color: lightskyblue; */
 	/* background-image: url("../../img/bg.jpg");   */
 }
 
