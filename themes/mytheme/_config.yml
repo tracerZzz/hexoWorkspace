@@ -9,4 +9,6 @@ menu:
 # Read More text
 excerpt_link: Read More
 
-
+skip_render: static/**
+exclude:
+  - static/**

@@ -5,8 +5,7 @@ webpackJsonp([0],[
 /* 3 */,
 /* 4 */,
 /* 5 */,
-/* 6 */,
-/* 7 */
+/* 6 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -14,7 +13,7 @@ webpackJsonp([0],[
 
 var _gsap = __webpack_require__(2);
 
-var _index = __webpack_require__(31);
+var _index = __webpack_require__(30);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -27,7 +26,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * jquery plugins
  */
-__webpack_require__(23);
+__webpack_require__(9);
 
 /**
  *  引入jquery.ui.slider
@@ -40,17 +39,17 @@ __webpack_require__(23);
  * gsap
  */
 //require("gsap");
-__webpack_require__(24);
-__webpack_require__(27);
-__webpack_require__(25);
-__webpack_require__(26);
+__webpack_require__(10);
+__webpack_require__(13);
+__webpack_require__(11);
+__webpack_require__(12);
 // 样式  (可以按需引入必要的css文件)
 __webpack_require__(33);
 __webpack_require__(34);
 //customer style
 
 //加入jqueryui 移动端插件
-__webpack_require__(14);
+__webpack_require__(20);
 //鼠标位置监控
 /*require('script-loader!trial-js')*/
 //随机颜色
@@ -437,70 +436,9 @@ $(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
+/* 7 */,
 /* 8 */,
-/* 9 */,
-/* 10 */,
-/* 11 */,
-/* 12 */,
-/* 13 */,
-/* 14 */
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function(jQuery) {
-
-/*!
- * jQuery UI Touch Punch 0.2.3w - WPXP Edition
- *
- * Copyright 2011–2014, Dave Furfero
- * Dual licensed under the MIT or GPL Version 2 licenses.
- * WPXP Edition - by Manuel Gumpinger
- *
- * Depends:
- *  jquery.ui.widget.js
- *  jquery.ui.mouse.js
- */
-!function (t) {
-  function e(e, o) {
-    if (!(e.originalEvent.touches.length > 1)) {
-      var n = e.originalEvent.changedTouches[0],
-          u = document.createEvent("MouseEvents");t(n.target).is("input") || t(n.target).is("textarea") || t(n.target).is("p") ? e.stopPropagation() : e.preventDefault(), u.initMouseEvent(o, !0, !0, window, 1, n.screenX, n.screenY, n.clientX, n.clientY, !1, !1, !1, !1, 0, null), e.target.dispatchEvent(u);
-    }
-  }if (t.support.touch = "ontouchend" in document, t.support.touch) {
-    var o,
-        n,
-        u,
-        c,
-        r = t.ui.mouse.prototype,
-        i = r._mouseInit,
-        s = r._mouseDestroy;r._touchStart = function (t) {
-      var r = this;!u && r._mouseCapture(t.originalEvent.changedTouches[0]) && (u = !0, c = !1, o = t.originalEvent.touches[0].screenX, n = t.originalEvent.touches[0].screenY, e(t, "mouseover"), e(t, "mousemove"), e(t, "mousedown"));
-    }, r._touchMove = function (t) {
-      if (u) {
-        var r = t.originalEvent.touches[0].screenX,
-            i = t.originalEvent.touches[0].screenY;if (o >= r - 2 && r + 2 >= o && n >= i - 2 && i + 2 >= n) return void (c = !1);c = !0, e(t, "mousemove");
-      }
-    }, r._touchEnd = function (t) {
-      u && (e(t, "mouseup"), e(t, "mouseout"), c || e(t, "click"), u = !1);
-    }, r._mouseInit = function () {
-      var e = this;e.element.bind({ touchstart: t.proxy(e, "_touchStart"), touchmove: t.proxy(e, "_touchMove"), touchend: t.proxy(e, "_touchEnd") }), i.call(e);
-    }, r._mouseDestroy = function () {
-      var e = this;e.element.unbind({ touchstart: t.proxy(e, "_touchStart"), touchmove: t.proxy(e, "_touchMove"), touchend: t.proxy(e, "_touchEnd") }), s.call(e);
-    };
-  }
-}(jQuery);
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
-
-/***/ }),
-/* 15 */,
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -635,7 +573,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 });
 
 /***/ }),
-/* 24 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -746,7 +684,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 25 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -794,7 +732,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 26 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -925,7 +863,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 27 */
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1062,15 +1000,77 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
+/* 14 */,
+/* 15 */,
+/* 16 */,
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(jQuery) {
+
+/*!
+ * jQuery UI Touch Punch 0.2.3w - WPXP Edition
+ *
+ * Copyright 2011–2014, Dave Furfero
+ * Dual licensed under the MIT or GPL Version 2 licenses.
+ * WPXP Edition - by Manuel Gumpinger
+ *
+ * Depends:
+ *  jquery.ui.widget.js
+ *  jquery.ui.mouse.js
+ */
+!function (t) {
+  function e(e, o) {
+    if (!(e.originalEvent.touches.length > 1)) {
+      var n = e.originalEvent.changedTouches[0],
+          u = document.createEvent("MouseEvents");t(n.target).is("input") || t(n.target).is("textarea") || t(n.target).is("p") ? e.stopPropagation() : e.preventDefault(), u.initMouseEvent(o, !0, !0, window, 1, n.screenX, n.screenY, n.clientX, n.clientY, !1, !1, !1, !1, 0, null), e.target.dispatchEvent(u);
+    }
+  }if (t.support.touch = "ontouchend" in document, t.support.touch) {
+    var o,
+        n,
+        u,
+        c,
+        r = t.ui.mouse.prototype,
+        i = r._mouseInit,
+        s = r._mouseDestroy;r._touchStart = function (t) {
+      var r = this;!u && r._mouseCapture(t.originalEvent.changedTouches[0]) && (u = !0, c = !1, o = t.originalEvent.touches[0].screenX, n = t.originalEvent.touches[0].screenY, e(t, "mouseover"), e(t, "mousemove"), e(t, "mousedown"));
+    }, r._touchMove = function (t) {
+      if (u) {
+        var r = t.originalEvent.touches[0].screenX,
+            i = t.originalEvent.touches[0].screenY;if (o >= r - 2 && r + 2 >= o && n >= i - 2 && i + 2 >= n) return void (c = !1);c = !0, e(t, "mousemove");
+      }
+    }, r._touchEnd = function (t) {
+      u && (e(t, "mouseup"), e(t, "mouseout"), c || e(t, "click"), u = !1);
+    }, r._mouseInit = function () {
+      var e = this;e.element.bind({ touchstart: t.proxy(e, "_touchStart"), touchmove: t.proxy(e, "_touchMove"), touchend: t.proxy(e, "_touchEnd") }), i.call(e);
+    }, r._mouseDestroy = function () {
+      var e = this;e.element.unbind({ touchstart: t.proxy(e, "_touchStart"), touchmove: t.proxy(e, "_touchMove"), touchend: t.proxy(e, "_touchEnd") }), s.call(e);
+    };
+  }
+}(jQuery);
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 21 */,
+/* 22 */,
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */,
+/* 27 */,
 /* 28 */,
 /* 29 */,
-/* 30 */,
-/* 31 */
+/* 30 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
+/* 31 */,
 /* 32 */,
 /* 33 */
 /***/ (function(module, exports) {
@@ -1085,13 +1085,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 /***/ }),
 /* 35 */,
-/* 36 */,
-/* 37 */
+/* 36 */
 /***/ (function(module, exports, __webpack_require__) {
 
 __webpack_require__(1);
-module.exports = __webpack_require__(7);
+module.exports = __webpack_require__(6);
 
 
 /***/ })
-],[37]);
+],[36]);

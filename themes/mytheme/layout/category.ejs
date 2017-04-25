@@ -1,1 +1,5 @@
-是否是category： <%- is_category()%>
+<%- is_category() %>
+ <% page.posts.each(function(item){ %>
+     <%- partial('_partial/article-excerpt', {item: item}) %>
+ <%}); %>
+

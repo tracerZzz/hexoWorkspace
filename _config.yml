@@ -25,7 +25,10 @@ archive_dir: archives
 category_dir: categories
 code_dir: downloads/code
 i18n_dir: :lang
-skip_render:
+# skip_render: ['static/**', src/**, source/**]
+skip_render: ../themes/mytheme/source/static/**
+exclude:
+  - ../themes/mytheme/source/static/**
 
 # Writing
 new_post_name: :title.md # File name of new posts

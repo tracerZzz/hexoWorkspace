@@ -14,7 +14,7 @@
 	})
 
 %>
-<!-- <% if(tagPost&&tagPost.length){%> -->
+ <% if(tagPost&&tagPost.length){ %> 
 <% page.posts.each(function(item){ %>
     <%- partial('_partial/article-excerpt', {item: item}) %>
 <% }); }%>
