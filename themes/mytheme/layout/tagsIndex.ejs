@@ -2,19 +2,19 @@
 type: tags
 ---
 
-<%var tags= site.tags
-	console.log(tags);
+<% var tags= site.tags %>
+	
 
-%>
+
 <div class="col-sm-8 offset-sm-2" id="cloudTags">
 	<p class="tagTitle">当前共有<%- tags.length %>个标签</p>
 	<hr>
 	<%- tagcloud(tags,{
-		min_font:14px,
-		max_font:30px,
+		min_font:14,
+		max_font:30,
 		color:true,
-		start_color:"#999999",
-		end_color:"#6D9FE8"
+		start_color:"#78C0D3",
+		end_color:"#B33134"
 		}) %>
 
 </div>

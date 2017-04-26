@@ -63,7 +63,7 @@ category_generator:
 tag.path: http://www.baidu.com
 
 archive_generator:
-  per_page: 6
+  per_page: 2
   yearly: true
   monthly: true
   daily: false

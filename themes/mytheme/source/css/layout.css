@@ -48,12 +48,12 @@ body {
 }
 
 a {
-	color: #f0f0f0;
+	color: gray;
 	text-decoration: none;
 }
 
 a:hover {
-	color: #000;
+	color: #47a3da;
 }
 
 
@@ -292,23 +292,24 @@ a:hover {
 	color: #47a3da;
 }
 .readmore a{
+	font-size: 1rem;
 	display: block;
+	line-height: 1.5rem
 }
 .readmore{
-	margin-top: 10px;
+	margin-top: 5px;
 	display: block;
-	height: 30px;
-	width: 80px;
+	height: 1.5rem;
 	float: right;
 	margin-right: 5px;
 	line-height: 30px;
-	border-radius: 5px;
-	border: 2px solid gray;
+	border-radius: 1px;
+	/* border-bottom: 2px solid gray; */
 }
 
 .readmore:hover{
 	border-radius: 5px;
-	border: 2px solid #47a3da;
+	/* border: 2px solid #47a3da; */
 
 }
 .excerpt{
@@ -341,30 +342,36 @@ body{
 }
 #blogtitle{
 	/* width: 100%; */
-	font-size: 2rem;
+	font-size: 2.1rem;
+	text-transform: uppercase;
 	/* border-bottom: 2px solid gray; */
 	margin-left: -15px;
+	min-height: 100px;
 	margin-right: -15px;
 	background-image: url("/img/bg.jpg");
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	padding-top: 20px;
-	padding-bottom: 20px;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
 
 }
 
 .container{
 }
 #page-nav{
+	opacity: 0;
+	margin-top: 1rem;
 	color: gray;
 	font-size: 1.5rem;
-	text-align: center;
+
+	/* text-align: center; */
 	/* background-image: url("../img/bg.jpg"); */  
 }
 #page-nav a{
 	color: gray;
+	/* background-color: #66BF98; */
 	text-decoration: none;
 }
 
@@ -375,7 +382,7 @@ body{
 #goTop{
 	position: fixed;
 	bottom: 80px;
-	right: 80px;
+	right: 5rem;
 	width: 30px;
 	height: 30px;
 	display: block;
@@ -396,6 +403,7 @@ body{
 #cloudTags{
 	margin-top: 20px;
 	padding: 10px 10px 10px 10px;
+	min-height: 40rem;
 }
 
 #cloudTags a{
@@ -426,7 +434,8 @@ body{
    display: block;
    cursor: pointer;
    font-size: 1.5rem;
-   margin-right: 10px;
+   margin-right: 1rem;
+   text-align: center;
 }
  #widemenu  li a:hover{
  	text-decoration: none;
@@ -438,4 +447,38 @@ body{
  }
 
 
+
+ @media (max-width: 1920px) {
+      body {
+        font-size: 16px;
+      }
+    }
+  
+    
+    @media (max-width: 600px) {
+      body {
+        font-size: 14px;
+      }
+    }
+
+    /**
+     * pagination
+     */
+    #page-nav a {
+    	border-radius: 5px;
+    	font-size: 1.1rem;
+    	border: 2px solid gray;
+    	display: block;
+    }
+     .next{
+    	float: right;
+    }
+	 .prev{
+		float: left;
+		margin-left: 20px;
+	}
+	 .current{
+		display: none;
+	}
+   
 /*# sourceMappingURL=layout.css.map*/

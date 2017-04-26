@@ -1,14 +1,14 @@
 
 
   <% if (page.total > 1){ %>
-  <nav id="page-nav">
+  <nav id="page-nav" class="col-12">
     <%- paginator({
-      prev_text: '&laquo; Prev',
-      next_text: 'Next &raquo;',
-      mid_size:3,
-      end_size:0,
-      space:" ",
-      current:false
+      prev_next: true,
+      prev_text: 'Prev Page',
+      next_text: 'Next Page',
+      mid_size: 0,
+      end_size: 0,
+      space: ""
     }) %>
   </nav>
 <% } %>

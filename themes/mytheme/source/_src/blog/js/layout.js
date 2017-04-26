@@ -45,6 +45,7 @@ $(function() {
 
     //文章渐进显示
     TweenMax.staggerFrom(".blog-post", 1, { y: 40, opacity: 0 }, 0)
+    TweenMax.fromTo("#page-nav", 1,{ y:40,} ,{ y:0, opacity: 1}, 0)
     //延迟加载图片
     $("img.lazy").lazyload({ effect: "fadeIn" });
 
