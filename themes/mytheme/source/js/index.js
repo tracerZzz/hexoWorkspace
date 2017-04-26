@@ -4,22 +4,19 @@ webpackJsonp([0],[
 /* 2 */,
 /* 3 */,
 /* 4 */,
-/* 5 */,
-/* 6 */,
-/* 7 */,
-/* 8 */
+/* 5 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function($) {
 
-var _gsap = __webpack_require__(3);
+var _gsap = __webpack_require__(2);
 
-var _index = __webpack_require__(33);
+var _index = __webpack_require__(20);
 
 var _index2 = _interopRequireDefault(_index);
 
-var _randomColor = __webpack_require__(5);
+var _randomColor = __webpack_require__(3);
 
 var _randomColor2 = _interopRequireDefault(_randomColor);
 
@@ -28,7 +25,7 @@ function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { de
 /**
  * jquery plugins
  */
-__webpack_require__(11);
+__webpack_require__(8);
 
 /**
  *  引入jquery.ui.slider
@@ -41,17 +38,17 @@ __webpack_require__(11);
  * gsap
  */
 //require("gsap");
+__webpack_require__(9);
 __webpack_require__(12);
-__webpack_require__(15);
-__webpack_require__(13);
-__webpack_require__(14);
+__webpack_require__(10);
+__webpack_require__(11);
 // 样式  (可以按需引入必要的css文件)
-__webpack_require__(36);
-__webpack_require__(37);
+__webpack_require__(23);
+__webpack_require__(24);
 //customer style
 
 //加入jqueryui 移动端插件
-__webpack_require__(24);
+__webpack_require__(16);
 //鼠标位置监控
 /*require('script-loader!trial-js')*/
 //随机颜色
@@ -438,9 +435,9 @@ $(function () {
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 9 */,
-/* 10 */,
-/* 11 */
+/* 6 */,
+/* 7 */,
+/* 8 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -575,7 +572,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 });
 
 /***/ }),
-/* 12 */
+/* 9 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -686,7 +683,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 13 */
+/* 10 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -734,7 +731,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 14 */
+/* 11 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -865,7 +862,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 15 */
+/* 12 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1002,15 +999,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 16 */,
-/* 17 */,
-/* 18 */,
-/* 19 */,
-/* 20 */,
-/* 21 */,
-/* 22 */,
-/* 23 */,
-/* 24 */
+/* 13 */,
+/* 14 */,
+/* 15 */,
+/* 16 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1059,40 +1051,35 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 25 */,
-/* 26 */,
-/* 27 */,
-/* 28 */,
-/* 29 */,
-/* 30 */,
-/* 31 */,
-/* 32 */,
-/* 33 */
+/* 17 */,
+/* 18 */,
+/* 19 */,
+/* 20 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 34 */,
-/* 35 */,
-/* 36 */
+/* 21 */,
+/* 22 */,
+/* 23 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 37 */
+/* 24 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 38 */
+/* 25 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(1);
-module.exports = __webpack_require__(8);
+module.exports = __webpack_require__(5);
 
 
 /***/ })
-],[38]);
+],[25]);
+//# sourceMappingURL=index.js.map

@@ -1,6 +1,87 @@
-webpackJsonp([1],{
+webpackJsonp([1],[
+/* 0 */,
+/* 1 */,
+/* 2 */,
+/* 3 */,
+/* 4 */,
+/* 5 */,
+/* 6 */
+/***/ (function(module, exports, __webpack_require__) {
 
-/***/ 10:
+"use strict";
+/* WEBPACK VAR INJECTION */(function($) {
+
+var _gsap = __webpack_require__(2);
+
+var _randomColor = __webpack_require__(3);
+
+var _randomColor2 = _interopRequireDefault(_randomColor);
+
+function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
+
+__webpack_require__(13);
+// require("../../../_static/bootstrap/js/tether.min.js")
+// require("../../../_static/bootstrap/js/bootstrap.min.js")
+__webpack_require__(22);
+__webpack_require__(7);
+__webpack_require__(19);
+__webpack_require__(18);
+__webpack_require__(21);
+
+__webpack_require__(15);
+
+//require("../../../_static/font-awesome-4.7.0/css/font-awesome.min.css");
+
+
+$(function () {
+
+    //debugger;
+    //require("./modernizr.custom.js")
+    // var c=randomColor({ luminosity: 'light', count:1});
+    //TweenMax.to("#blogtitle",0.5,{backgroundColor:c[0]});
+
+    var thisPage = {};
+    var menuRight = document.getElementById('cbp-spmenu-s2'),
+        showRightPush = document.getElementById('menu'),
+        body = document.body;
+
+    showRightPush.onclick = function () {
+
+        if (thisPage.menuState == "open") {
+            _gsap.TweenMax.staggerTo(["#menu", "#goTop"], 0.2, { x: 0 }, 0);
+            thisPage.menuState = "close";
+        } else {
+            _gsap.TweenMax.staggerTo(["#menu", "#goTop"], 0.2, { x: -230 }, 0);
+            thisPage.menuState = "open";
+            //TweenMax.to("#line1",0.2,{css:{width:"50%",rationX:45}transformOrigin:"right bottom"})
+        }
+        classie.toggle(body, 'cbp-spmenu-push-toleft');
+        //classie.toggle( showRightPush, 'cbp-spmenu-push-toleft' );
+        classie.toggle(menuRight, 'cbp-spmenu-open');
+    };
+
+    //文章渐进显示
+    _gsap.TweenMax.staggerFrom(".blog-post", 1, { y: 40, opacity: 0 }, 0);
+    //延迟加载图片
+    $("img.lazy").lazyload({ effect: "fadeIn" });
+
+    //
+    (function goTop() {
+
+        $(window).scroll(function (e) {
+            //若滚动条离顶部大于100元素
+            if ($(window).scrollTop() > 150) $("#goTop").fadeIn(500); //以0.5秒的间隔渐显id=goTop的元素
+            else $("#goTop").fadeOut(500); //以0.5秒的间隔渐隐id=goTop的元素
+            $("#goTop").click(function () {
+                _gsap.TweenMax.to(window, 1, { scrollTo: { y: 0 }, ease: Power2.easeInOut });
+            });
+        });
+    })();
+});
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
+
+/***/ }),
+/* 7 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -76,8 +157,12 @@ webpackJsonp([1],{
 })(window);
 
 /***/ }),
-
-/***/ 18:
+/* 8 */,
+/* 9 */,
+/* 10 */,
+/* 11 */,
+/* 12 */,
+/* 13 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -271,7 +356,7 @@ var _gsScope = typeof module !== "undefined" && module.exports && typeof global 
 	};
 	if (true) {
 		//AMD
-		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(19)], __WEBPACK_AMD_DEFINE_FACTORY__ = (getGlobal),
+		!(__WEBPACK_AMD_DEFINE_ARRAY__ = [__webpack_require__(14)], __WEBPACK_AMD_DEFINE_FACTORY__ = (getGlobal),
 				__WEBPACK_AMD_DEFINE_RESULT__ = (typeof __WEBPACK_AMD_DEFINE_FACTORY__ === 'function' ?
 				(__WEBPACK_AMD_DEFINE_FACTORY__.apply(exports, __WEBPACK_AMD_DEFINE_ARRAY__)) : __WEBPACK_AMD_DEFINE_FACTORY__),
 				__WEBPACK_AMD_DEFINE_RESULT__ !== undefined && (module.exports = __WEBPACK_AMD_DEFINE_RESULT__));
@@ -281,11 +366,10 @@ var _gsScope = typeof module !== "undefined" && module.exports && typeof global 
 		module.exports = getGlobal();
 	}
 })("ScrollToPlugin");
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-
-/***/ 19:
+/* 14 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -414,7 +498,7 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 				if (global) {
 					_globals[n] = _exports[n] = cl; //provides a way to avoid global namespace pollution. By default, the main classes like TweenLite, Power1, Strong, etc. are added to window unless a GreenSockGlobals is defined. So if you want to have things added to a custom object instead, just do something like window.GreenSockGlobals = {} before loading any GreenSock files. You can even set up an alias like window.GreenSockGlobals = windows.gs = {} so that you can access everything like gs.TweenLite. Also remember that ALL classes are added to the window.com.greensock object (in their respective packages, like com.greensock.easing.Power1, com.greensock.TweenLite, etc.)
 					hasModule = typeof module !== "undefined" && module.exports;
-					if (!hasModule && "function" === "function" && __webpack_require__(7)) {
+					if (!hasModule && "function" === "function" && __webpack_require__(4)) {
 						//AMD
 						!(__WEBPACK_AMD_DEFINE_ARRAY__ = [], __WEBPACK_AMD_DEFINE_RESULT__ = function () {
 							return cl;
@@ -2320,11 +2404,10 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 	_tickerActive = false; //ensures that the first official animation forces a ticker.tick() to update the time when it is instantiated
 })(typeof module !== "undefined" && module.exports && typeof global !== "undefined" ? global : undefined || window, "TweenLite");
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)))
+/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(1)))
 
 /***/ }),
-
-/***/ 23:
+/* 15 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -2583,118 +2666,42 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-
-/***/ 31:
+/* 16 */,
+/* 17 */,
+/* 18 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 32:
+/* 19 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 34:
+/* 20 */,
+/* 21 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 35:
+/* 22 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-
-/***/ 39:
+/* 23 */,
+/* 24 */,
+/* 25 */,
+/* 26 */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(1);
-module.exports = __webpack_require__(9);
+module.exports = __webpack_require__(6);
 
-
-/***/ }),
-
-/***/ 9:
-/***/ (function(module, exports, __webpack_require__) {
-
-"use strict";
-/* WEBPACK VAR INJECTION */(function($) {
-
-var _gsap = __webpack_require__(3);
-
-var _randomColor = __webpack_require__(5);
-
-var _randomColor2 = _interopRequireDefault(_randomColor);
-
-function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
-
-__webpack_require__(18);
-// require("../../../_static/bootstrap/js/tether.min.js")
-// require("../../../_static/bootstrap/js/bootstrap.min.js")
-__webpack_require__(35);
-__webpack_require__(10);
-__webpack_require__(32);
-__webpack_require__(31);
-__webpack_require__(34);
-
-__webpack_require__(23);
-
-//require("../../../_static/font-awesome-4.7.0/css/font-awesome.min.css");
-
-
-$(function () {
-    //debugger;
-    //require("./modernizr.custom.js")
-    // var c=randomColor({ luminosity: 'light', count:1});
-    //TweenMax.to("#blogtitle",0.5,{backgroundColor:c[0]});
-
-    var thisPage = {};
-    var menuRight = document.getElementById('cbp-spmenu-s2'),
-        showRightPush = document.getElementById('menu'),
-        body = document.body;
-
-    showRightPush.onclick = function () {
-
-        if (thisPage.menuState == "open") {
-            _gsap.TweenMax.staggerTo(["#menu", "#goTop"], 0.2, { x: 0 }, 0);
-            thisPage.menuState = "close";
-        } else {
-            _gsap.TweenMax.staggerTo(["#menu", "#goTop"], 0.2, { x: -230 }, 0);
-            thisPage.menuState = "open";
-            //TweenMax.to("#line1",0.2,{css:{width:"50%",rationX:45}transformOrigin:"right bottom"})
-        }
-        classie.toggle(body, 'cbp-spmenu-push-toleft');
-        //classie.toggle( showRightPush, 'cbp-spmenu-push-toleft' );
-        classie.toggle(menuRight, 'cbp-spmenu-open');
-    };
-
-    //文章渐进显示
-    _gsap.TweenMax.staggerFrom(".blog-post", 1, { y: 40, opacity: 0 }, 0);
-    //延迟加载图片
-    $("img.lazy").lazyload({ effect: "fadeIn" });
-
-    //
-    (function goTop() {
-
-        $(window).scroll(function (e) {
-            //若滚动条离顶部大于100元素
-            if ($(window).scrollTop() > 150) $("#goTop").fadeIn(500); //以0.5秒的间隔渐显id=goTop的元素
-            else $("#goTop").fadeOut(500); //以0.5秒的间隔渐隐id=goTop的元素
-            $("#goTop").click(function () {
-                _gsap.TweenMax.to(window, 1, { scrollTo: { y: 0 }, ease: Power2.easeInOut });
-            });
-        });
-    })();
-});
-/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ })
-
-},[39]);
+],[26]);
+//# sourceMappingURL=layout.js.map

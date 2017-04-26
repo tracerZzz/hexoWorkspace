@@ -21,15 +21,18 @@ module.exports = {
         // test: ["babel-polyfill", "./src/test.js"],
         // svg: ["./src/svg.js"],
         // gsap: ["./src/gsap.js"],
-        index: ['webpack-hot-middleware/client?reload=true', "./_src/blog/js/index.js"],
-        layout: ['webpack-hot-middleware/client?reload=true', "./_src/blog/js/layout.js"],
+        // 'webpack-hot-middleware/client?reload=true',
+        index: [ "./_src/blog/js/index.js"],
+        layout: ["./_src/blog/js/layout.js"],
         // weixinDemo:["src/weixin/weixinDemo.js"],
         //transSourceSearch:["src/weixin/transSourceSearch.js"]
         /*vendor: ['jquery', 'lodash']*/
     },
     output: {
         path: path.join(__dirname, "./"),
-        filename: 'js/[name].js'
+        filename: 'js/[name].js',
+        hotUpdateChunkFilename:'./_source/[id].[hash].hot-update.js',
+        hotUpdateMainFilename:"./_source/[hash].hot-update.json",
     },
 
     module: {
@@ -171,8 +174,8 @@ module.exports = {
         }),
         // OccurenceOrderPlugin is needed for webpack 1.x only
         // new webpack.optimize.OccurenceOrderPlugin(),
-        new webpack.HotModuleReplacementPlugin(),
-        new webpack.NoEmitOnErrorsPlugin()
+        // new webpack.HotModuleReplacementPlugin(),
+        // new webpack.NoEmitOnErrorsPlugin()
 
         // 复制高度静态资源
         // new CopyWebpackPlugin([{
@@ -183,7 +186,7 @@ module.exports = {
 
 
     ],
-    //devtool: "source-map",
+    devtool: "source-map",
     devServer: {
         contentBase: path.join(__dirname, "dist"),
         compress: true,

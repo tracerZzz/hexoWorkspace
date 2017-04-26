@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "./node_modules/.bin/webpack --config webpack.config.js --watch --hot",
+    "start": "./node_modules/.bin/webpack --config webpack.config.js --watch --hot --cache",
     "server": "./node_modules/.bin/webpack-dev-server  --hot"
   },
   "keywords": [],

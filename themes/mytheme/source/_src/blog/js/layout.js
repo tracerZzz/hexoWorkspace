@@ -16,6 +16,7 @@ require("jquery-lazyload")
 
 
 $(function() {
+
     //debugger;
     //require("./modernizr.custom.js")
    // var c=randomColor({ luminosity: 'light', count:1});
