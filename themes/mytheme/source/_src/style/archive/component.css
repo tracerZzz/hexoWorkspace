@@ -48,7 +48,7 @@
 /* Orientation-dependent styles for the content of the menu */
 
 .cbp-spmenu-vertical {
-	width: 240px;
+	width: 200px;
 	height: 100%;
 	top: 0;
 	z-index: 1000;
@@ -88,7 +88,7 @@
 }
 
 .cbp-spmenu-right {
-	right: -240px;
+	right: -200px;
 	/* background-image:url("../../img/big.png"); */
 	background-repeat: no-repeat;
 	background-position:center bottom
@@ -118,7 +118,7 @@
 }
 
 .cbp-spmenu-push-toleft {
-	left: -240px;
+	left: -200px;
 }
 
 /* Transitions */
@@ -153,19 +153,19 @@
 
 	.cbp-spmenu-vertical {
 		font-size: 90%;
-		width: 190px;
+		width: 170px;
 	}
 
 	.cbp-spmenu-left,
 	.cbp-spmenu-push-toleft {
-		left: -190px;
+		left: -170px;
 	}
 
 	.cbp-spmenu-right {
-		right: -190px;
+		right: -170px;
 	}
 
 	.cbp-spmenu-push-toright {
-		left: 190px;
+		left: 170px;
 	}
 }

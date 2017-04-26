@@ -78,6 +78,9 @@ $(function () {
             });
         });
     })();
+    $(".menuline").hover(function () {
+        // TweenMax.to($(this), 1, {rotationX, ease: Power3.easeInOut})
+    }, function () {});
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 

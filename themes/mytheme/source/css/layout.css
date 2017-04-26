@@ -54,6 +54,7 @@ a {
 
 a:hover {
 	color: #47a3da;
+	text-decoration: none;
 }
 
 
@@ -109,7 +110,7 @@ a:hover {
 /* Orientation-dependent styles for the content of the menu */
 
 .cbp-spmenu-vertical {
-	width: 240px;
+	width: 200px;
 	height: 100%;
 	top: 0;
 	z-index: 1000;
@@ -149,7 +150,7 @@ a:hover {
 }
 
 .cbp-spmenu-right {
-	right: -240px;
+	right: -200px;
 	/* background-image:url("../../img/big.png"); */
 	background-repeat: no-repeat;
 	background-position:center bottom
@@ -179,7 +180,7 @@ a:hover {
 }
 
 .cbp-spmenu-push-toleft {
-	left: -240px;
+	left: -200px;
 }
 
 /* Transitions */
@@ -214,20 +215,20 @@ a:hover {
 
 	.cbp-spmenu-vertical {
 		font-size: 90%;
-		width: 190px;
+		width: 170px;
 	}
 
 	.cbp-spmenu-left,
 	.cbp-spmenu-push-toleft {
-		left: -190px;
+		left: -170px;
 	}
 
 	.cbp-spmenu-right {
-		right: -190px;
+		right: -170px;
 	}
 
 	.cbp-spmenu-push-toright {
-		left: 190px;
+		left: 170px;
 	}
 }
 
@@ -252,8 +253,8 @@ a:hover {
 	height: 40px;
 	width: 40px;
 	position: fixed;
-	right: 30px;
-	top: 120px;
+	right: 2rem;
+	top: 6rem;
 	border-radius: 5px;
 	border: 2px solid gray;
 	background-color: rgba(236, 246, 249, 0.7);
@@ -264,12 +265,12 @@ a:hover {
 
 }
 .container{
-	padding: 5px;
+	/* padding: 5px; */
 }
 
 .blog-post{
-	padding-left:15px;
-	padding-right:15px;
+	/* padding-left:15px; */
+	/* padding-right:15px; */
 	margin-top: 30px;
 	float: left;
 
@@ -301,7 +302,7 @@ a:hover {
 	display: block;
 	height: 1.5rem;
 	float: right;
-	margin-right: 5px;
+	 margin-right: 5px; 
 	line-height: 30px;
 	border-radius: 1px;
 	/* border-bottom: 2px solid gray; */
@@ -345,20 +346,24 @@ body{
 	font-size: 2.1rem;
 	text-transform: uppercase;
 	/* border-bottom: 2px solid gray; */
-	margin-left: -15px;
-	min-height: 100px;
-	margin-right: -15px;
-	background-image: url("/img/bg.jpg");
+	min-height: 180px;
+ 	background-image: url("/img/bg.jpg");
 	-webkit-background-size: cover;
 	background-size: cover;
 	background-position: center center;
 	background-repeat: no-repeat;
-	padding-top: 1rem;
+	padding-top: 2.5rem;
 	padding-bottom: 1rem;
 
 }
 
-.container{
+.container-fluid{
+	padding-right: 0px;
+	padding-left: 0px;
+}
+.row{
+	margin-left: 0px;
+	margin-right: 0px;
 }
 #page-nav{
 	opacity: 0;
@@ -381,8 +386,8 @@ body{
 
 #goTop{
 	position: fixed;
-	bottom: 80px;
-	right: 5rem;
+	bottom: 3rem;
+	right: 3rem;
 	width: 30px;
 	height: 30px;
 	display: block;
@@ -403,18 +408,16 @@ body{
 #cloudTags{
 	margin-top: 20px;
 	padding: 10px 10px 10px 10px;
-	min-height: 40rem;
+	min-height: 30rem;
 }
 
 #cloudTags a{
 		color: gray;
-		display: block;
-		border: 2px solid gray;
 		margin-left: 20px;
 		float: left;
 		padding: 1px 5px 1px 5px;
 		text-decoration: none;
-		border-radius: 0.6rem;
+		border-radius: 0.2rem;
 		margin-top: 5px;
 }
 #cloudTags a:hover{
@@ -427,6 +430,9 @@ body{
 	text-align: center;
 	font-size: 1.3rem;
 }
+ #widemenu {
+ 	padding-top: 1rem;
+ }
  #widemenu  li{
  	text-transform: uppercase;
    list-style: none;
@@ -434,11 +440,17 @@ body{
    display: block;
    cursor: pointer;
    font-size: 1.5rem;
-   margin-right: 1rem;
+	
+   margin-right: 1rem; 
    text-align: center;
 }
+#widemenu li a{
+	color: lightgray;
+	/* background-image: url("/img/mbg.png");
+	 */
+}
  #widemenu  li a:hover{
- 	text-decoration: none;
+ 	text-decoration: underline;
  	color: #47a3da;
 
  }
@@ -450,14 +462,14 @@ body{
 
  @media (max-width: 1920px) {
       body {
-        font-size: 16px;
+        font-size: 1rem;
       }
     }
   
     
     @media (max-width: 600px) {
       body {
-        font-size: 14px;
+        font-size: 0.9rem;
       }
     }
 
@@ -473,12 +485,16 @@ body{
      .next{
     	float: right;
     }
-	 .prev{
+	.prev{
 		float: left;
-		margin-left: 20px;
+		margin-left: 0px;
 	}
 	 .current{
 		display: none;
+	}
+	.blog-footer{
+
+		padding-bottom: 10px;
 	}
    
 /*# sourceMappingURL=layout.css.map*/

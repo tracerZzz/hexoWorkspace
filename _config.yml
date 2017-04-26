@@ -58,12 +58,12 @@ category_map:
 tag_map: 
 
 category_generator:
-  per_page: 6
+  per_page: 10
 
 tag.path: http://www.baidu.com
 
 archive_generator:
-  per_page: 2
+  per_page: 6
   yearly: true
   monthly: true
   daily: false
