@@ -187,9 +187,9 @@ a:hover {
 
 .cbp-spmenu,
 .cbp-spmenu-push {
-	-webkit-transition: all 0.3s ease;
-	-moz-transition: all 0.3s ease;
-	transition: all 0.3s ease;
+	-webkit-transition: all 0.2s ease;
+	-moz-transition: all 0.2s ease;
+	transition: all 0.2s ease;
 }
 
 /* Example media queries */
@@ -238,11 +238,11 @@ a:hover {
 	left: 12%;
 	height: 4px;
 	width:76%;
-	background-color:gray; 
+	background-color:#47a3da; 
 	border-radius: 2px;
 }
 .line1{
-	margin-top: 8px;
+	margin-top: 10px;
 }.line2{
 	margin-top: 4px;
 }.line3{
@@ -253,10 +253,9 @@ a:hover {
 	height: 40px;
 	width: 40px;
 	position: fixed;
-	right: 2rem;
-	top: 6rem;
+	right: 0.5rem;
+	top: 2.5rem;
 	border-radius: 5px;
-	border: 2px solid gray;
 	background-color: rgba(236, 246, 249, 0.7);
 	z-index: 1003;
 	cursor: pointer;
@@ -465,7 +464,15 @@ body{
         font-size: 1rem;
       }
     }
-  
+  @media (max-width: 992px) {
+    #blogtitle{
+    	min-height: 120px;
+    }
+    	
+    #blogname{
+    	text-align: center;
+    }
+  }
     
     @media (max-width: 600px) {
       body {
@@ -496,5 +503,12 @@ body{
 
 		padding-bottom: 10px;
 	}
+	/**
+	 * archive 去除边距
+	 */
+#archivec{
+	padding-left: 0px;
+	padding-right: 0px;
+}	
    
 /*# sourceMappingURL=layout.css.map*/

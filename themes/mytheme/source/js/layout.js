@@ -51,7 +51,7 @@ $(function () {
             _gsap.TweenMax.staggerTo(["#menu", "#goTop"], 0.2, { x: 0 }, 0);
             thisPage.menuState = "close";
         } else {
-            _gsap.TweenMax.staggerTo(["#menu", "#goTop"], 0.2, { x: -230 }, 0);
+            _gsap.TweenMax.staggerTo(["#menu", "#goTop"], 0.2, { x: -200 }, 0);
             thisPage.menuState = "open";
             //TweenMax.to("#line1",0.2,{css:{width:"50%",rationX:45}transformOrigin:"right bottom"})
         }
@@ -73,14 +73,12 @@ $(function () {
             //若滚动条离顶部大于100元素
             if ($(window).scrollTop() > 150) $("#goTop").fadeIn(500); //以0.5秒的间隔渐显id=goTop的元素
             else $("#goTop").fadeOut(500); //以0.5秒的间隔渐隐id=goTop的元素
+
             $("#goTop").click(function () {
                 _gsap.TweenMax.to(window, 1, { scrollTo: { y: 0 }, ease: Power2.easeInOut });
             });
         });
     })();
-    $(".menuline").hover(function () {
-        // TweenMax.to($(this), 1, {rotationX, ease: Power3.easeInOut})
-    }, function () {});
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 

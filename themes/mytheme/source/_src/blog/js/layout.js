@@ -34,7 +34,7 @@ $(function() {
             TweenMax.staggerTo(["#menu","#goTop"], 0.2, { x: 0 },0);
             thisPage.menuState = "close";
         } else {
-            TweenMax.staggerTo(["#menu","#goTop"], 0.2, { x: -230 },0);
+            TweenMax.staggerTo(["#menu","#goTop"], 0.2, { x: -200 },0);
             thisPage.menuState = "open";
             //TweenMax.to("#line1",0.2,{css:{width:"50%",rationX:45}transformOrigin:"right bottom"})
         }
@@ -60,16 +60,22 @@ $(function() {
         $("#goTop").fadeIn(500); //以0.5秒的间隔渐显id=goTop的元素
     else
         $("#goTop").fadeOut(500); //以0.5秒的间隔渐隐id=goTop的元素
+
 	    $("#goTop").click(function(){
 	    	TweenMax.to(window, 1, { scrollTo: { y: 0 }, ease: Power2.easeInOut });
 	    })
 		});
 
     }());
-    $(".menuline").hover(function(){
-        // TweenMax.to($(this), 1, {rotationX, ease: Power3.easeInOut})
-    },function(){
 
-    })
+
+  /*  window.addEventListener('resize', function() {
+        var docEl=window.document.documentElement;
+        var width = docEl.getBoundingClientRect().width+15;
+        if(width>992){
+           
+        }
+    });*/
+  
 
 })
