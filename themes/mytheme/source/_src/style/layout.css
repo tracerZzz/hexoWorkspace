@@ -62,7 +62,9 @@
 .readmore a{
 	font-size: 1rem;
 	display: block;
-	line-height: 1.5rem
+	line-height: 1.5rem;
+	border: 1px solid gray;
+	border-radius: 5px;
 }
 .readmore{
 	margin-top: 5px;
@@ -145,10 +147,12 @@ body{
 	color: gray;
 	/* background-color: #66BF98; */
 	text-decoration: none;
+
 }
 
 #page-nav a:hover{
 	color: #4E9CEF;
+	border:2px solid  #4E9CEF;
 }
 
 #goTop{
@@ -270,6 +274,10 @@ body{
 	.blog-footer{
 
 		padding-bottom: 10px;
+
+	}
+	.blog-footer a{
+		text-decoration: underline;
 	}
 	/**
 	 * archive 去除边距
@@ -278,4 +286,30 @@ body{
 	padding-left: 0px;
 	padding-right: 0px;
 }	
-   
+
+#logo{
+	width: 80px;
+	height: 80px;
+	border: 1px solid gray;
+	margin-top: 15px;
+	margin-left: 60px;
+	margin-bottom: 5px;
+	border-radius: 5px;
+	background-image: url("../img/big.png");
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: -5px 0;
+	background-repeat: no-repeat;
+	background-color: lightgray;
+
+}
+
+#tagTitle{
+	text-align: center;
+	padding-top: 10px;
+	font-size: 1.5rem;
+	margin-bottom: -10px;
+}
+
+
+  

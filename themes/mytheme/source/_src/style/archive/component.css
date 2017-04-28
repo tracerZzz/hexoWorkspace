@@ -3,7 +3,7 @@
 	/* background: none; */
 	position: fixed;
 	/* border: 1px solid gray; */
-	/* background-color: lightskyblue; */
+	 background-color: #515050; 
 	/* background-image: url("../../img/bg.jpg");   */
 }
 
@@ -21,7 +21,7 @@
 .cbp-spmenu a {
 	display: block;
 	padding-left: 10px;
-	color: gray;
+	color: #93BCD6;
 	font-size: 1.1em;
 	font-weight: 300;
 	text-decoration: none;
