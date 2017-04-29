@@ -15,9 +15,11 @@
     <%- partial('article-categories', {item: item}) %>
     <%- partial('article-tags', {item: item}) %> 
     <!-- Content -->
-    <div class="excerpt">
-        
-    <%- item.excerpt || item.content %>
+    <div class="excerpt" id="excerpt">
+         <a  href="<%- config.root %><%- item.path %>">
+<!--     <%- item.excerpt || item.content %>  -->
+    <%- item.excerpt  %>
+    </a>
     </div>
 
     <!-- Only display the Read More link if we are displaying an excerpt -->
@@ -28,5 +30,6 @@
             </a>
         </div>
     <% } %>
+    <!-- <hr style="width: 80%;"> -->
  </div>
   

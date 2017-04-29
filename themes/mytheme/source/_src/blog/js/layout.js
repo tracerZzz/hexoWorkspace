@@ -28,17 +28,22 @@ $(function() {
         showRightPush = document.getElementById('menu'),
         body = document.body;
 
+
     showRightPush.onclick = function() {
 
         if (thisPage.menuState == "open") {
             TweenMax.staggerTo(["#menu", "#goTop"], 0.2, { x: 0 }, 0);
             thisPage.menuState = "close";
+            $("#mask").hide();
             TweenMax.to("#line1", 0.3, { rotation: 0, y: 0, transformOrigin: "right right", delay: 0.1 })
             TweenMax.to("#line2", 0.3, { opacity: 1 })
             TweenMax.to("#line3", 0.3, { rotation: 0, y: 0, transformOrigin: "right right", delay: 0.1 })
 
         } else {
             TweenMax.staggerTo(["#menu", "#goTop"], 0.2, { x: -200 }, 0);
+            TweenMax.staggerFrom(".menuItem", 0.2, { x: 200, delay: 0.15 }, 0.1);
+            $("#mask").show();
+             
             thisPage.menuState = "open";
             TweenMax.to("#line1", 0.3, { rotation: 45, y: 8, transformOrigin: "right right", delay: 0.1 })
             TweenMax.to("#line2", 0.3, { opacity: 0 })
@@ -49,8 +54,16 @@ $(function() {
         classie.toggle(menuRight, 'cbp-spmenu-open');
     };
 
+    /**
+     * 蒙版点击事件
+     * @return {[type]} [description]
+     */
+ $("#mask").click(function(){
+   $("#menu").trigger("click");
+ })
+
     //文章渐进显示
-    TweenMax.staggerFrom(".blog-post", 1, { y: 40, opacity: 0 }, 0)
+    TweenMax.staggerFrom(".blog-post", 1, { y: 40, opacity: 0 }, 0.2)
     TweenMax.fromTo("#page-nav", 1, { y: 40, }, { y: 0, opacity: 1 }, 0)
         //延迟加载图片
     $("img.lazy").lazyload({ effect: "fadeIn" });
@@ -104,4 +117,13 @@ $(function() {
      */
     var FastClick = require('fastclick');
     FastClick.attach(document.body, {});
+
+
+    /**
+     * categoriesIndex
+     */
+
+    $(".category-list").addClass("row col-12");
+    $(".category-list-item").addClass("col-sm-6");
+
 })

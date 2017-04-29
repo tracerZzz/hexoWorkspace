@@ -329,18 +329,18 @@ body{
    
 }
 #mask{
-/* 	z-index: -1;
-	
+ 	z-index: 2;
 	height: 100%;
+	display: none;
 	width: 100%;
 	position: absolute;
-	padding-right: 18px; */
+	cursor: pointer;
 
 }
 #maskc{
-/* 	width: 100%;
+ 	width: 100%;
 	height: 100%;
-	background-color: rgba(100, 0, 0, 0); */
+	background-color: rgba(224, 224, 224, 0.7); 
 }
 #blogtitle{
 	/* width: 100%; */
@@ -544,5 +544,22 @@ body{
 }
 
 
+/**
+ * categoriesIndex css
+ */
+
+.category-list{
+	list-style: none;
+	cursor: pointer;
+	float: float;
+}
+.category-list-count{
+}
+.category-list-link{
+	display: block;
+	width: 50%;
+	float: left;
+}
   
+
 /*# sourceMappingURL=layout.css.map*/
