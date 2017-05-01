@@ -390,7 +390,7 @@ body{
 #goTop{
 	position: fixed;
 	bottom: 3rem;
-	right: 3rem;
+	right: 1.5rem;
 	width: 30px;
 	height: 30px;
 	display: block;
@@ -560,6 +560,7 @@ body{
 	width: 50%;
 	float: left;
 }
-  
+pre{
+}
 
 /*# sourceMappingURL=layout.css.map*/

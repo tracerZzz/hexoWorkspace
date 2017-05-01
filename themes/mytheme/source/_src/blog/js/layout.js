@@ -2,8 +2,8 @@ import { TweenMax } from "gsap";
 import randomColor from "modules/randomcolor/randomColor.js";
 
 require("modules/gsap/ScrollToPlugin.js");
-// require("../../../_static/bootstrap/js/tether.min.js")
-// require("../../../_static/bootstrap/js/bootstrap.min.js")
+
+
 require("../../../_static/bootstrap/css/bootstrap.min.css")
 require('./classie.js');
 require("../../style/archive/default.css")
@@ -13,7 +13,7 @@ require("../../style/layout.css")
 require("jquery-lazyload")
 
 //require("../../../_static/font-awesome-4.7.0/css/font-awesome.min.css");
-
+import 'bootstrap/dist/js/bootstrap';
 
 $(function() {
 

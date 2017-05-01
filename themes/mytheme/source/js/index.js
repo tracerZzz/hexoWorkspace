@@ -1,4 +1,4 @@
-webpackJsonp([0],[
+webpackJsonp([1],[
 /* 0 */,
 /* 1 */,
 /* 2 */,
@@ -12,7 +12,7 @@ webpackJsonp([0],[
 
 var _gsap = __webpack_require__(3);
 
-var _index = __webpack_require__(21);
+var _index = __webpack_require__(22);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -43,12 +43,12 @@ __webpack_require__(12);
 __webpack_require__(10);
 __webpack_require__(11);
 // 样式  (可以按需引入必要的css文件)
-__webpack_require__(24);
 __webpack_require__(25);
+__webpack_require__(26);
 //customer style
 
 //加入jqueryui 移动端插件
-__webpack_require__(17);
+__webpack_require__(18);
 //鼠标位置监控
 /*require('script-loader!trial-js')*/
 //随机颜色
@@ -1003,7 +1003,8 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* 14 */,
 /* 15 */,
 /* 16 */,
-/* 17 */
+/* 17 */,
+/* 18 */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
@@ -1052,23 +1053,17 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
 /***/ }),
-/* 18 */,
 /* 19 */,
 /* 20 */,
-/* 21 */
+/* 21 */,
+/* 22 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 22 */,
 /* 23 */,
-/* 24 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 24 */,
 /* 25 */
 /***/ (function(module, exports) {
 
@@ -1076,11 +1071,17 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 /***/ }),
 /* 26 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 27 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(5);
 
 
 /***/ })
-],[26]);
+],[27]);
 //# sourceMappingURL=index.js.map

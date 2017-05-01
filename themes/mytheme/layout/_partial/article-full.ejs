@@ -1,9 +1,8 @@
 
-
-<div class="blog-post">
+<div class="blog-post col-sm-8 offset-sm-2" style="word-break:break-all;">
 
     <!-- Title -->
-    <h3 class="blog-post-title">
+    <h3 class="blog-post-title" >
         <a href="<%- config.root %><%- item.path %>">
             <%- item.title || item.link%>
         </a>
@@ -21,15 +20,19 @@
     <%- partial('article-categories', {item: item}) %>
 
     <!-- Content -->
-    <%- item.content %>
+   
+            
+             <%- item.content %>
+        
 
-    <hr />
+    <hr>
 
     
 
+
 </div>
 
-<div id="toc" class="toc-article hidden-sm-down">
+  <div id="toc" class="toc-article ">
     <div class="toc-title">目录</div>
     <%- toc(item.content, {list_number: false}) %>
-</div>
+    </div>
