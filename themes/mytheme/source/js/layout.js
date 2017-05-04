@@ -28,6 +28,7 @@ __webpack_require__(7);
 __webpack_require__(21);
 __webpack_require__(20);
 __webpack_require__(23);
+__webpack_require__(29);
 
 __webpack_require__(17);
 
@@ -79,8 +80,9 @@ $(function () {
     });
 
     //文章渐进显示
-    _gsap.TweenMax.staggerFrom(".blog-post", 1, { y: 40, opacity: 0 }, 0.2);
-    _gsap.TweenMax.fromTo("#page-nav", 1, { y: 40 }, { y: 0, opacity: 1 }, 0);
+    var tl = new TimelineMax();
+    tl.staggerFrom(".blog-post", 1, { y: 40, opacity: 0 }, 0.1);
+    tl.fromTo("#page-nav", 0.5, { y: 20 }, { y: 0, opacity: 1 });
     //延迟加载图片
     $("img.lazy").lazyload({ effect: "fadeIn" });
 
@@ -132,6 +134,15 @@ $(function () {
 
     $(".category-list").addClass("row col-12");
     $(".category-list-item").addClass("col-sm-6");
+
+    /**
+     * article 
+     */
+    $("#toc-menu").click(function () {
+        var tl = new TimelineMax();
+        tl.fromTo(".toc-article", 1, { width: 0, display: "block" }, { width: "250px", display: "block", ease: Power2.easeInOut });
+        // TweenMax.to(window, 1, { scrollTo: { y: 0 }, ease: Power2.easeInOut });
+    });
 });
 /* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(0)))
 
@@ -5771,6 +5782,12 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 module.exports = __webpack_require__(6);
 
+
+/***/ }),
+/* 29 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
 
 /***/ })
 ],[28]);

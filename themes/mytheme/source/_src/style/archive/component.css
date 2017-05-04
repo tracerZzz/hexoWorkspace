@@ -21,7 +21,7 @@
 .cbp-spmenu a {
 	display: block;
 	padding-left: 10px;
-	color: #93BCD6;
+	color: #258ecd;
 	font-size: 1.1em;
 	font-weight: 300;
 	text-decoration: none;
@@ -37,7 +37,7 @@
 .cbp-spmenu a:hover {
 	/* background: #258ecd; */
 	text-decoration: none;
-	color: #258ecd;
+	color: #93BCD6;
 }
 
 .cbp-spmenu a:active {

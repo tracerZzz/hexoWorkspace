@@ -14,6 +14,9 @@
 
 
 <body class="cbp-spmenu-push">
+    <div class="wrap">
+        
+    
     <nav  class="cbp-spmenu cbp-spmenu-vertical cbp-spmenu-right hidden-lg-up" id=cbp-spmenu-s2>
         <!-- <h3>TracerZzz'blog</h3> -->
         <div id="logo">
@@ -44,16 +47,17 @@
 
         </div>
 
-    <div class="row">
+    <div class="row" >
          <%- body %>
     </div>
    
     
-         <%- partial('_partial/footer') %>
+         
     
               
            
     </div>
+    
     <div id="menu" class="menu hidden-lg-up ">
         <div class="menu menu-line line1" id=line1></div>
         <div class="menu menu-line line2" id=line2></div>
@@ -61,4 +65,6 @@
     </div>
 
     <div id="goTop" class="" ><i class="fa fa-eject" aria-hidden="true"></i></div>
+    </div>
+    <%- partial('_partial/footer') %>
 </body>

@@ -9,6 +9,7 @@ require('./classie.js');
 require("../../style/archive/default.css")
 require("../../style/archive/component.css")
 require("../../style/layout.css")
+require("../../style/article.css")
 
 require("jquery-lazyload")
 
@@ -43,7 +44,7 @@ $(function() {
             TweenMax.staggerTo(["#menu", "#goTop"], 0.2, { x: -200 }, 0);
             TweenMax.staggerFrom(".menuItem", 0.2, { x: 200, delay: 0.15 }, 0.1);
             $("#mask").show();
-             
+
             thisPage.menuState = "open";
             TweenMax.to("#line1", 0.3, { rotation: 45, y: 8, transformOrigin: "right right", delay: 0.1 })
             TweenMax.to("#line2", 0.3, { opacity: 0 })
@@ -58,13 +59,14 @@ $(function() {
      * 蒙版点击事件
      * @return {[type]} [description]
      */
- $("#mask").click(function(){
-   $("#menu").trigger("click");
- })
+    $("#mask").click(function() {
+        $("#menu").trigger("click");
+    })
 
     //文章渐进显示
-    TweenMax.staggerFrom(".blog-post", 1, { y: 40, opacity: 0 }, 0.2)
-    TweenMax.fromTo("#page-nav", 1, { y: 40, }, { y: 0, opacity: 1 }, 0)
+    var tl = new TimelineMax();
+    tl.staggerFrom(".blog-post", 1, { y: 40, opacity: 0 }, 0.1)
+    tl.fromTo("#page-nav", 0.5, { y: 20, }, { y: 0, opacity: 1 })
         //延迟加载图片
     $("img.lazy").lazyload({ effect: "fadeIn" });
 
@@ -126,4 +128,13 @@ $(function() {
     $(".category-list").addClass("row col-12");
     $(".category-list-item").addClass("col-sm-6");
 
+
+    /**
+     * article 
+     */
+     $("#toc-menu").click(function(){
+        let tl = new TimelineMax();
+        tl.fromTo(".toc-article",1,{width:0,display:"block"},{width:"250px",display:"block",ease: Power2.easeInOut });
+        // TweenMax.to(window, 1, { scrollTo: { y: 0 }, ease: Power2.easeInOut });
+     })
 })
