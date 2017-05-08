@@ -94,9 +94,14 @@ $(function () {
             if ($(window).scrollTop() > 150) {
 
                 $("#goTop").fadeIn(500); //以0.5秒的间隔渐显id=goTop的元素
-                $(".toc-menu").css({ "position": "fixed", "top": "2px" });
-                $(".toc-article").css({ "position": "fixed", "top": "2px" });
+                var height = $("#blogtitle").css("height");
+                $(".toc-menu").css({ "position": "fixed", "top": height });
+                $(".toc-article").css({ "position": "fixed", "top": height });
+                /*$("#widemenu").removeClass("col-sm-8 offset-sm-1");*/
+                //$("#blogtitle").css({"position":"fixed","top":"0px","z-index":"2","width":"100%","height":"100px"});
+
             } else {
+                //$("#blogtitle").css({"position":"relative","backgroundColor":""});
                 $(".toc-menu").css({ "position": "absolute", "top": "auto" });
                 $(".toc-article").css({ "position": "absolute", "top": "auto" });
                 $("#goTop").fadeOut(500); //以0.5秒的间隔渐隐id=goTop的元素
