@@ -12,7 +12,7 @@ webpackJsonp([1],[
 
 var _gsap = __webpack_require__(3);
 
-var _index = __webpack_require__(22);
+var _index = __webpack_require__(23);
 
 var _index2 = _interopRequireDefault(_index);
 
@@ -43,8 +43,8 @@ __webpack_require__(12);
 __webpack_require__(10);
 __webpack_require__(11);
 // 样式  (可以按需引入必要的css文件)
-__webpack_require__(25);
 __webpack_require__(26);
+__webpack_require__(27);
 //customer style
 
 //加入jqueryui 移动端插件
@@ -1056,20 +1056,15 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 /* 19 */,
 /* 20 */,
 /* 21 */,
-/* 22 */
+/* 22 */,
+/* 23 */
 /***/ (function(module, exports) {
 
 // removed by extract-text-webpack-plugin
 
 /***/ }),
-/* 23 */,
 /* 24 */,
-/* 25 */
-/***/ (function(module, exports) {
-
-// removed by extract-text-webpack-plugin
-
-/***/ }),
+/* 25 */,
 /* 26 */
 /***/ (function(module, exports) {
 
@@ -1077,11 +1072,17 @@ var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol
 
 /***/ }),
 /* 27 */
+/***/ (function(module, exports) {
+
+// removed by extract-text-webpack-plugin
+
+/***/ }),
+/* 28 */
 /***/ (function(module, exports, __webpack_require__) {
 
 module.exports = __webpack_require__(5);
 
 
 /***/ })
-],[27]);
+],[28]);
 //# sourceMappingURL=index.js.map

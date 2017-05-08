@@ -77,14 +77,21 @@ $(function() {
 
         $(window).scroll(function(e) {
             //若滚动条离顶部大于100元素
-            if ($(window).scrollTop() > 150)
-                $("#goTop").fadeIn(500); //以0.5秒的间隔渐显id=goTop的元素
-            else
-                $("#goTop").fadeOut(500); //以0.5秒的间隔渐隐id=goTop的元素
+            if ($(window).scrollTop() > 150){
 
-            $("#goTop").click(function() {
-                TweenMax.to(window, 1, { scrollTo: { y: 0 }, ease: Power2.easeInOut });
-            })
+                $("#goTop").fadeIn(500); //以0.5秒的间隔渐显id=goTop的元素
+                $(".toc-menu").css({"position":"fixed","top":"2px"});
+                $(".toc-article").css({"position":"fixed","top":"2px"});
+            }
+            else{
+                $(".toc-menu").css({"position":"absolute","top":"auto"});
+                $(".toc-article").css({"position":"absolute","top":"auto"});
+                $("#goTop").fadeOut(500); //以0.5秒的间隔渐隐id=goTop的元素
+                $("#goTop").click(function() {
+                    TweenMax.to(window, 1, { scrollTo: { y: 0 }, ease: Power2.easeInOut });
+                })
+            }
+               
         });
 
     }());
@@ -133,8 +140,26 @@ $(function() {
      * article 
      */
      $("#toc-menu").click(function(){
-        let tl = new TimelineMax();
-        tl.fromTo(".toc-article",1,{width:0,display:"block"},{width:"250px",display:"block",ease: Power2.easeInOut });
-        // TweenMax.to(window, 1, { scrollTo: { y: 0 }, ease: Power2.easeInOut });
+        
+        if(!thisPage.articleMenu||thisPage.articleMenu=="close"){
+            let tl = new TimelineMax();
+            thisPage.articleMenu="open";
+            tl.fromTo(".toc-article",0.5,{width:0,display:"block"},{width:"250px",display:"block",ease: Power2.easeInOut });
+            tl.to(".toc-menu",0.5,{x:"250px",rotation:90,ease: Power2.easeInOut,color:"red"},0);
+            tl.to("#toc ol",0.01,{css:{display:"block"}});
+            tl.to(".toc-title",0.01,{css:{display:"block"}});
+            tl.staggerFromTo("ol li", 0.2, {y:100,opacity:0}, {y:0,opacity:1},0.05);
+            tl.to(".toc-article",0,{css:{"overflow-y":"auto"}})
+        }else{
+            let tl = new TimelineMax();
+            thisPage.articleMenu="close";
+            tl.to("#toc ol",0.01,{css:{display:"none"}});
+            tl.to(".toc-title",0.01,{css:{display:"none"}});
+            tl.fromTo(".toc-article",0.5,{width:250,display:"block"},{width:"0px",display:"block",ease: Power2.easeInOut });
+            tl.to(".toc-menu",0.5,{x:"0px",rotation:270,ease: Power2.easeInOut ,color:"#258ecd"},0);
+            tl.to(".toc-article",0,{css:{"overflow-y":""}})
+        }
+
+       
      })
 })

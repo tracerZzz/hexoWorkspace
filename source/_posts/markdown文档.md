@@ -37,7 +37,7 @@ Insert `[ TOC ]` without spaces to generate a table of contents (builtin parsers
 >> even more indented
 
 ## Titles
-# Big title (h1)
+
 ## Middle title (h2)
 ### Smaller title (h3)
 #### and so on (hX)
