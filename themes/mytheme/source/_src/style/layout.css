@@ -127,7 +127,7 @@ body {
     font-size: 2.1rem;
     /* text-transform: uppercase; */
     /* border-bottom: 2px solid gray; */
-    min-height: 140px;
+    min-height: 160px;
     background-image: url("/img/bg.jpg");
     -webkit-background-size: cover;
     background-size: cover;
@@ -136,7 +136,6 @@ body {
     padding-top: 1.5rem;
     padding-bottom: 1rem;
     top: 0px;
-    position: fixed;
     width: 100%;
     z-index: 2;
 }
@@ -257,13 +256,12 @@ body {
         font-size: 1rem;
     }
     .blog-post img{
-    	height: 160px;
-    }
+    	    }
     #blogtitle {
 
     }
     #content{
-        margin-top: 150px;
+      
     }
 
 }
@@ -271,10 +269,9 @@ body {
 @media (max-width: 992px) {
     #blogtitle {
         min-height: 120px;
-        position: fixed;
     }
     #content{
-        margin-top: 120px;
+      
     }
 
     #blogname {

@@ -63,18 +63,22 @@ ol{
 @media (max-width: 1920px) {
 	.toc-article{
 		
-		top: 0px;
+		top: 140px;
 		/* height: 600px; */
 		max-height: 700px;
+	}
+	.toc-menu{
+		top: 140px;
 	}
 
 
 }
 
 @media (max-width: 992px) {
-	.toc-article{
-		top: 0px;
+	.toc-menu,.toc-article{
+		top: 120px;
 	}
+
 
 
 }
@@ -83,10 +87,12 @@ ol{
 	.toc-menu{
 		top: 0px;
 	}
-
+	.toc-menu{
+		top: 120px;
+	}
 
 	.toc-article{
-		top: 0px;
+		top: 120px;
 		/* height: 500px; */
 		max-height: 400px;
 		
