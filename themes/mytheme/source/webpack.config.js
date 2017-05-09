@@ -118,7 +118,7 @@ module.exports = {
 
     },
     plugins: [
-        //new UglifyJSPlugin(),
+        new UglifyJSPlugin(),
         extractCSS,
         extractLESS,
         extractSASS,
@@ -174,8 +174,8 @@ module.exports = {
         }),
         // OccurenceOrderPlugin is needed for webpack 1.x only
         // new webpack.optimize.OccurenceOrderPlugin(),
-        // new webpack.HotModuleReplacementPlugin(),
-        // new webpack.NoEmitOnErrorsPlugin()
+         new webpack.HotModuleReplacementPlugin(),
+         new webpack.NoEmitOnErrorsPlugin()
 
         // 复制高度静态资源
         // new CopyWebpackPlugin([{

@@ -2,18 +2,30 @@
 
   
 
-  <div class="col-sm-8 offset-sm-1 hidden-md-down" id="widemenu" style="align-content: center;">
+  <div class="col-sm-9  hidden-md-down" id="widemenu" style="align-content: center;">
     <ul class="">
     
 	 <% for (var i in theme.menu){ %>
     <li class="menulist" style="text-align: left;">
       <a class="menuline" href="<%- url_for(theme.menu[i]) %>"><%=i%> <span class=""></span></a>
     </li>
-
+	
 
 	<% } %>	
 
 
     </ul>
-
+   
+	
   </div>
+  <div class="search">
+  <input type="search" class="st-default-search-input" placeholder="<%= __('search') %>">
+  </div>
+  <script type="text/javascript">
+  (function(w,d,t,u,n,s,e){w['SwiftypeObject']=n;w[n]=w[n]||function(){
+  (w[n].q=w[n].q||[]).push(arguments);};s=d.createElement(t);
+  e=d.getElementsByTagName(t)[0];s.async=1;s.src=u;e.parentNode.insertBefore(s,e);
+  })(window,document,'script','//s.swiftypecdn.com/install/v2/st.js','_st');
+
+  _st('install','FArigF2ajNdVdQ6Rs8cV','2.0.0');
+  </script>
