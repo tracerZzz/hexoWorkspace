@@ -81,8 +81,8 @@ $(function() {
 
                 $("#goTop").fadeIn(500); //以0.5秒的间隔渐显id=goTop的元素
                 var height=$("#blogtitle").css("height")
-                $(".toc-menu").css({"position":"fixed","top":height});
-                $(".toc-article").css({"position":"fixed","top":height});
+                $(".toc-menu").css({"position":"fixed","top":"10px"});
+                $(".toc-article").css({"position":"fixed","top":"10px"});
                 /*$("#widemenu").removeClass("col-sm-8 offset-sm-1");*/
                 //$("#blogtitle").css({"position":"fixed","top":"0px","z-index":"2","width":"100%","height":"100px"});
 
