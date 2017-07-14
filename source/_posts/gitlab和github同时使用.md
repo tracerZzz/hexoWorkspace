@@ -1,11 +1,10 @@
 ---
 title: github 和 gitlab 同时使用
 author: tracerZzz 
-excerpt: <img src="http://og3vj3jrj.bkt.clouddn.com/git/gitlab1.png" width="80%"></br><span style="font-size:18px;color:#B6B5B5;">在github账号已经配置为全局的情况下，如何再进行gitlab的账号配置，在本机同时兼顾gitlab和github项目</span>
+excerpt: <img src="http://og3vj3jrj.bkt.clouddn.com/git/gitlab1.png" width="100%"></br>在github账号已经配置为全局的情况下，如何再进行gitlab的账号配置，在本机同时兼顾gitlab和github项目
 tags: 
-- git
+- github 
 - gitlab
-- github
 ---
 
 ### github 和 gitlab 同时使用
