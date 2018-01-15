@@ -4,6 +4,8 @@ author: tracerZzz
 excerpt: <img width="100%"  class="lazy" data-original="http://og3vj3jrj.bkt.clouddn.com/js/mdn.png"></br>javascript 变量、常量的声明，作用域，变量提升，数据结构和类型，数据类型的转换(parseInt(),parseFloat(),inNaN())，以及字面量
 tags: 
 - js
+categories:
+- coding
 ---
 
 ### 变量声明

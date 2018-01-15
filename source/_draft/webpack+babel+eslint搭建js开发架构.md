@@ -3,8 +3,9 @@ title: webpack+babel+eslint
 author: tracerZzz 
 excerpt: <span class="articleDescribe">describe</span>
 tags: 
-- tag1
-- tag2
+- js
+categories:
+- coding
 ---
 
 ### webpack简介

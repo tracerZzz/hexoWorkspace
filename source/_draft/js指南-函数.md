@@ -4,25 +4,8 @@ author: tracerZzz
 excerpt: <img width="100%"  class="lazy" data-original="http://og3vj3jrj.bkt.clouddn.com/js/mdn.png"></br>javascript 函数 argumnets,箭头函数，默认参数
 tags: 
 - js
-- tr
-- td
-- 特
-- 个
-- 56
-- 63
-- 7658
-- 87658
-- 876588
-- 9887
-- 4543
-- 45
-- 6565
-- 5435
-- 45435543
-- 355223
-- 321543
-- 65437653765
-- 32
+categories:
+- coding
 ---
 ### 使用arguments对象
 例：设想有一个用来连接字符串的函数。唯一事先确定的参数是在连接后的字符串中用来分隔各个连接部分的字符（译注：比如例子里的分号“；”）。该函数定义如下：

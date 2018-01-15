@@ -3,10 +3,9 @@ title: sample markdown file
 author: tracerZzz 
 excerpt: <img class="lazy" width="100%"  data-original="http://og3vj3jrj.bkt.clouddn.com/js/ext.png"></br>运力信息审核页面实现页面的实现思路，具体细节，以及问题总结；
 tags: 
-- 123
-- 456
+- markdown
 categories:
- - coding
+- coding
 ---
 
 
