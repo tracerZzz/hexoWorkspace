@@ -5,7 +5,7 @@
 # SiteÁÁÇáàã
 title: À Çraftman
 subtitle: tracerZzz'blog
-description: 一个工匠
+description: 想当木匠的程序员！
 author: tracerZzz
 language: zh-Hans
 timezone:
@@ -41,15 +41,16 @@ post_asset_folder: false
 relative_link: false
 future: true
 highlight:
-  enable: false
+  enable: true
   line_number: true
   auto_detect: 
   tab_replace: 
 #代码高亮
-prism_plugin:
-  mode: 'realtime'    # realtime/preprocess
-  theme: 'tomorrow'      # okaidia 黑色  solarizedlight 米黄色
-  line_number: true    # default false
+# prism_plugin:
+#   mode: 'realtime'    # realtime/preprocess
+#   theme: 'tomorrow'      # okaidia 黑色  solarizedlight 米黄色
+#   # theme: 'solarizedlight'      # okaidia 黑色  solarizedlight 米黄色
+#   line_number: true    # default false
 
 # Category & Tag
 # default_category: uncategorized
@@ -82,13 +83,13 @@ time_format: HH:mm:ss
 
 # Pagination
 ## Set per_page to 0 to disable pagination
-per_page: 5
+per_page: 7
 pagination_dir: page
 
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-# theme: mytheme
+#theme: mytheme
 theme: next
 #theme: landscape
 # Deployment

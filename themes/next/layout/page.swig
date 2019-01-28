@@ -7,8 +7,8 @@
   #}{% if page.type === "categories" and not page.title %}{#
     #}{{ __('title.category') + page_title_suffix }}{#
   #}{% elif page.type === "tags" and not page.title %}{#
-    #}{{ __('title.tag') + page_title_suffix }}{#
-  #}{% else %}{#
+    #}{{ __('title.tag') + page_title_suffix }}
+  {% else %}{#
     #}{{ page.title + page_title_suffix }}{#
   #}{% endif %}{#
 #}{% endblock %}

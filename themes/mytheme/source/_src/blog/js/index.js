@@ -168,16 +168,15 @@ $(function() {
      */
 
 
-    // $("#lefttop").click(function() {
-    //     window.location.href = "https://tracerzzz.github.io/"
-
-    // })
+    $("#lefttop").click(function() {
+    window.location.href = "/archives"
+    })
     $("#righttop").click(function() {
-
+        window.location.href = "https://tracerzzz.ltd/about/"
        // alert("profile");
     })
     $("#leftbottom").click(function() {
-        window.location.href = "https://github.com/tracerZzz"
+        window.location.href = "http://github.com/tracerZzz"
     })
     $("#rightbottom").click(function() {
         window.location.href = "http://music.163.com/#/user/home?id=91916193"

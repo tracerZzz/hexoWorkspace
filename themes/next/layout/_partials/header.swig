@@ -44,7 +44,15 @@
             {% if theme.menu_icons.enable %}
               <i class="menu-item-icon fa fa-fw fa-{{ path.split('||')[1] | trim | default('question-circle') }}"></i> <br />
             {% endif %}
-            {{ __('menu.' + name) | replace('menu.', '') }}
+           {% if name=="tags"%}
+            {{ __('menu.' + name) | replace('menu.', '') }}<span class="menuspan">{{site.tags.length}}</span>
+           {% elseif name=="categories"%}
+            {{ __('menu.' + name) | replace('menu.', '') }}<span class="menuspan">{{site.categories.length}}</span>
+           {% elseif name=="archives"%}
+            {{ __('menu.' + name) | replace('menu.', '') }}<span class="menuspan">{{site.posts.length}}</span>
+            {%else %}
+             {{ __('menu.' + name) | replace('menu.', '') }}
+            {% endif %}
           </a>
         </li>
       {% endfor %}

@@ -27,10 +27,14 @@ override: false
 # For example, you put your favicons into `hexo-site/source/images` directory.
 # Then need to rename & redefine they on any other names, otherwise icons from Next will rewrite your custom icons in Hexo.
 favicon:
-  small: /images/favicon-16x16-next.png
-  medium: /images/favicon-32x32-next.png
-  apple_touch_icon: /images/apple-touch-icon-next.png
-  safari_pinned_tab: /images/logo.svg
+  # small: /images/favicon-16x16-next.png
+  small: favicon.ico
+  medium: favicon.ico
+  # medium: /images/favicon-32x32-next.png
+  # apple_touch_icon: /images/apple-touch-icon-next.png
+  apple_touch_icon: favicon.ico
+  # safari_pinned_tab: /images/logo.svg
+  safari_pinned_tab: favicon.ico
   #android_manifest: /images/manifest.json
   #ms_browserconfig: /images/browserconfig.xml
 
@@ -45,7 +49,7 @@ rss:
 footer:
   # Specify the date when the site was setup.
   # If not defined, current year will be used.
-  since: 2017
+  since: 2016
 
   # Icon between year and copyright info.
   icon: user
@@ -63,7 +67,7 @@ footer:
     version: true
   # -------------------------------------------------------------
   # Any custom text can be defined here.
-  #custom_text: Hosted by <a target="_blank" href="https://pages.github.com">GitHub Pages</a>
+  custom_text: 备案号 <a target="_blank" href="http://www.miitbeian.gov.cn/">京ICP备18058118号</a>
 
 # ---------------------------------------------------------------
 # SEO Settings
@@ -128,7 +132,7 @@ scheme: Muse
 # Value after `||` delimeter is the name of FontAwesome icon. If icon (with or without delimeter) is not specified, globe icon will be loaded.
 social:
   GitHub: https://github.com/tracerZzz
-  E-Mail: mailto:zzztracer@gmail.com 
+  E-Mail: mailto:173439618@qq.com
   #Google: https://plus.google.com/yourname || google
   #Twitter: https://twitter.com/yourname || twitter
   #FB Page: https://www.facebook.com/yourname || facebook
@@ -154,7 +158,7 @@ links_layout: block
 # Sidebar Avatar
 # in theme directory(source/images): /images/avatar.gif
 # in site  directory(source/uploads): /uploads/avatar.gif
-avatar: http://og3vj3jrj.bkt.clouddn.com/20180114151590788838213.jpg
+avatar: https://tracerzzz.ltd/20180114151590788838213.jpg
 
 # Table Of Contents in the Sidebar
 toc:
@@ -208,7 +212,7 @@ sidebar:
 scroll_to_more: true
 
 # Automatically saving scroll position on each post/page in cookies.
-save_scroll: true
+save_scroll: false
 
 # Automatically excerpt description in homepage as preamble text.
 excerpt_description: true
@@ -277,7 +281,7 @@ custom_logo:
 # Available value:
 #    normal | night | night eighties | night blue | night bright
 # https://github.com/chriskempson/tomorrow-theme
-highlight_theme: normal
+highlight_theme: night eighties
 
 
 # ---------------------------------------------------------------
@@ -331,7 +335,7 @@ font:
 
   # Font settings for <code> and code blocks.
   codes:
-    external: true
+    external: false
     family:
     size:
 
@@ -361,19 +365,20 @@ han: false
 # Disqus
 disqus:
   enable: false
-  shortname:
+  shortname: tracerzzzblog
   count: true
 # disqus_shortname: tracerzzzblog
 
+
 # Hypercomments
-hypercomments_id: 99985
+# hypercomments_id: 99985
 
 # changyan
 changyan:
   enable: false
   appid:
   appkey:
-
+# livere_uid: MTAyMC8zOTE5Ny8xNTcyNA==
 
 # Valine.
 # You can get your appid and appkey from https://leancloud.cn
@@ -402,16 +407,16 @@ valine:
 # Introduction: https://imsun.net/posts/gitment-introduction/
 # You can get your Github ID from https://api.github.com/users/<Github username>
 gitment:
-  enable: false
+  enable: true
   mint: true # RECOMMEND, A mint on Gitment, to support count, language and proxy_gateway
   count: true # Show comments count in post meta area
   lazy: false # Comments lazy loading with a button
-  cleanly: false # Hide 'Powered by ...' on footer, and more
+  cleanly: true # Hide 'Powered by ...' on footer, and more
   language: # Force language, or auto switch by theme
-  github_user: # MUST HAVE, Your Github ID
-  github_repo: # MUST HAVE, The repo you use to store Gitment comments
-  client_id: # MUST HAVE, Github client id for the Gitment
-  client_secret: # EITHER this or proxy_gateway, Github access secret token for the Gitment
+  github_user: tracerZzz
+  github_repo: tracerZzz.github.io 
+  client_id: 7bb4d9f6e3e295073e67
+  client_secret: 2c3a075d4bd5149674405ed17d02cb601fe84e89
   proxy_gateway: # Address of api proxy, See: https://github.com/aimingoo/intersect
   redirect_protocol: # Protocol of redirect_uri with force_redirect_protocol when mint enabled
 

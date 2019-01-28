@@ -1,7 +1,7 @@
 ---
 title: sample markdown file
 author: tracerZzz 
-excerpt: <img class="lazy" width="100%"  data-original="http://og3vj3jrj.bkt.clouddn.com/js/ext.png"></br>运力信息审核页面实现页面的实现思路，具体细节，以及问题总结；
+excerpt: <img class="lazy" width="100%"  data-original="https://tracerzzz.ltd/20180309152057359393507.png"></br>这是一个简单的markdown 文件帮助文档
 tags: 
 - markdown
 categories:
@@ -269,11 +269,11 @@ but is currently **not** available in *Markdown2*.
 The syntax was adopted from the [php markdown project](http://michelf.ca/projects/php-markdown/extra/#table),
 and is also used in github flavoured markdown.
 
-| Year | Temperature (low) | Temperature (high) |  
-| ---- | ----------------- | -------------------|  
-| 1900 |               -10 |                 25 |  
-| 1910 |               -15 |                 30 |  
-| 1920 |               -10 |                 32 |  
+| Year | Temperature (low) | Temperature (high) |
+| ---- | ----------------- | -------------------|
+| 1900 |               -10 |                 25 |
+| 1910 |               -15 |                 30 |
+| 1920 |               -10 |                 32 |
 
 
 ### Wiki Tables
@@ -301,18 +301,21 @@ Apple
 Orange
 :   The fruit of an evergreen tree of the genus Citrus.
 
-
 ## About
 
 This plugin and this sample file is proudly brought to you by the [revolunet team][revolunet]
 
- [ref1]: http://revolunet.com
- [ref2]: http://revolunet.com "rich web apps"
- [MarkdownREF]: http://daringfireball.net/projects/markdown/basics
- [MarkdownPreview]: https://github.com/revolunet/sublimetext-markdown-preview
- [ST]: http://sublimetext.com
- [revolunet]: http://revolunet.com
- [revolunet-logo]: http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg "revolunet logo"
- [gfm]: https://help.github.com/articles/github-flavored-markdown/
- [emoji]: http://www.emoji-cheat-sheet.com/
+[ref1]: http://revolunet.com
+[ref2]: http://revolunet.com "rich web apps"
+[MarkdownREF]: http://daringfireball.net/projects/markdown/basics
+[MarkdownPreview]: https://github.com/revolunet/sublimetext-markdown-preview
+[ST]: http://sublimetext.com
+[revolunet]: http://revolunet.com
+[revolunet-logo]: http://www.revolunet.com/static/parisjs8/img/logo-revolunet-carre.jpg "revolunet logo"
+[gfm]: https://help.github.com/articles/github-flavored-markdown/
+[emoji]: http://www.emoji-cheat-sheet.com/
+
+
+
+
 

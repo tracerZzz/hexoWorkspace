@@ -141,6 +141,7 @@
 .pagination .page-number.current {
     border-radius: 100%;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    color:white;
     background-color: rgba(255, 255, 255, 0.35);
 }
 .pagination .prev, .pagination .next, .pagination .page-number {
@@ -879,7 +880,7 @@ a:hover {
 }
 
 .pagination a{
-    color: black;
+    color: #eeb21c;
 }.pagination a:hover{
     color: #fa2278;
 }
@@ -888,10 +889,16 @@ a:hover {
     width:100%;
     height:100%;
     position:fixed;
-    background-image:url("http://og3vj3jrj.bkt.clouddn.com/20180114151591681270111.jpg")
+    // background-image:url("https://tracerzzz.ltd/20180114151591681270111.jpg")
+    // background-image:url("https://tracerzzz.ltd/20180309152057303395487.jpg")
+    background-image:url("https://tracerzzz.ltd/20180309152057324510783.png")
     background-repeat:no-repeat;
     background-attachment:fixed; 
     background-position: center top ;
+    background-size: cover;  //只支持IE9+  
+    -webkit-background-size: cover; //webkit核心  
+    -moz-background-size: cover; //FF核心  
+    -o-background-size: cover; //应该是Opera核心吧，反正不是IE的，就先不管它了
 }
 // 手机端不显示背景图片
 @media (max-width: 767px) {
@@ -899,4 +906,17 @@ a:hover {
      background-image:none
     }
 }
+.menuspan {
+    font-size: 8px;
+    background: #33331d;
+    display: inline-block;
+    border-radius: 8px;
+    width: 20px;
+    margin-left: 2px;
+    /* color: white; */
+}
+.token.selector, .token.important, .token.atrule, .token.keyword, .token.builtin {
+    margin-left: -4px;
+}
+
 
