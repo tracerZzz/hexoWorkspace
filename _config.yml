@@ -95,10 +95,19 @@ theme: next
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type: git
+- type: git
   repo: git@github.com:tracerZzz/tracerZzz.github.io.git
   branch: master
   message: 重新发布
+  #- type: ftpsync
+  #  host: byu3375870001.my3w.com
+  #  user: byu3375870001
+  #  pass: Zz100200300
+  #  remote: /htdocs
+  #  port: 21
+  # ignore: [ignore]
+  # connections: [connections]
+  # verbose: [true|false]
 
 search:
   path: search.xml
